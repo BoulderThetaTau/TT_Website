@@ -1,3 +1,12 @@
+.logo {
+  content: url('../../public/images/eta_gamma_logo.png' );
+  max-height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
 .navbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     height: 80px;

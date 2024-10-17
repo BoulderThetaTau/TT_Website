@@ -4,10 +4,13 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+
+  /* Adds page style to all the folowing pages */
   
   .home,
   .services,
   .products,
+  .brotherhood,
   .sign-up {
     display: flex;
     height: 90vh;
@@ -27,6 +30,15 @@
   
   .products {
     background-image: url('../public/images/img-1.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .brotherhood {
+    background-image: url('../public/images/img-2.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;

@@ -3,5 +3,5 @@ import '../../App.css';
 
 
 export default function Brotherhood(){
-    return <h1 className='brotherhood'>Brotherhood</h1>
+    return <h1 className='brotherhood'>BROTHERHOOD</h1>
 }

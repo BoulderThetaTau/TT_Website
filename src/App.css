@@ -11,6 +11,8 @@
   .services,
   .products,
   .brotherhood,
+  .comm-serve,
+  .prof-def,
   .sign-up {
     display: flex;
     height: 90vh;
@@ -39,6 +41,24 @@
   
   .brotherhood {
     background-image: url('../public/images/img-2.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .comm-serve {
+    background-image: url('../public/images/img-8.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .prof-def {
+    background-image: url('../public/images/img-1.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;

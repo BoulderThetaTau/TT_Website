@@ -55,7 +55,7 @@
   }
   
   .nav-item {
-    height: 5px;
+    height: 3rem;
   }
   
   .nav-links {
@@ -68,8 +68,9 @@
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    background-color: #fff;
     transition: all 0.2s ease-out;
+    color: #242222;
   }
   
   .fa-bars {

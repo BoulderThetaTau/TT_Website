@@ -55,14 +55,14 @@ function Navbar() {
                     Professional Development
                   </Link>
                 </li>
-                <li className='nav-item'>
+              </ul>
+              {/* Need to figure out what button tag I need to use */}
+              {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+              <li className='nav-item'>
                   <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                     Contact Us
                   </Link>
                 </li>
-              </ul>
-              {/* Need to figure out what button tag I need to use */}
-              {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
             </div>
         </nav>
     </>

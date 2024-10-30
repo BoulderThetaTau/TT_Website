@@ -41,28 +41,28 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/comm-serve' className='nav-links' onClick={closeMobileMenu}>
                     Community Service
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/brotherhood' className='nav-links' onClick={closeMobileMenu}>
                     Brotherhood
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/prof-def' className='nav-links' onClick={closeMobileMenu}>
                     Professional Development
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                    Sign Up
                   </Link>
                 </li>
               </ul>
               {/* Need to figure out what button tag I need to use */}
               {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+              <li className='nav-item'>
+                  <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    Contact Us
+                  </Link>
+                </li>
             </div>
         </nav>
     </>

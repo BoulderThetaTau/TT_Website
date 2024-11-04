@@ -33,12 +33,9 @@ function Footer() {
                     <Link to='https://thetatau.org/' target='_blank'>National Theta Tau</Link>
                     <Link to='mailto:central.office@thetatau.org' className='email-link'>central.office@thetatau.org</Link>
             </div>
-        </div>
-      </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
-            <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2024</small>
-            <div className="social-icons">
+            <div className='footer-link-items-socials'>
+                <Link to='https://store.thetatau.org/' target='_blank' className='socials-items'>Theta Tau Shop</Link>
+                <div className="social-icons">
                 <Link className="social-icon-link instagram"
                 to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0'
                 target='_blank'
@@ -53,7 +50,31 @@ function Footer() {
                 >
                     <i className="fab fa-linkedin"></i>
                 </Link>
-                {/* Once we have more social media sites, more of these can be enabled with their links 
+              </div>
+            </div>
+        </div>
+      </div>
+      <section className="social-media">
+        <div className="social-media-wrap">
+            <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2024</small>
+            
+            <div className="social-icons">
+              {/* Once we have more social media sites, more of these can be enabled with their links 
+                <Link className="social-icon-link instagram"
+                to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0'
+                target='_blank'
+                aria-label='Instagram'
+                >
+                    <i className="fab fa-instagram"></i>
+                </Link>
+                <Link className="social-icon-link linkedin"
+                to='/'
+                target='_blank'
+                aria-label='Linkedin'
+                >
+                    <i className="fab fa-linkedin"></i>
+                </Link>
+                
 
                 <Link className="social-icon-link facebook"
                 to='/'

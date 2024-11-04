@@ -37,15 +37,8 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-            <small className="website-rights">THETA TAU 2024</small>
+            <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2024</small>
             <div className="social-icons">
-                <Link className="social-icon-link facebook"
-                to='/'
-                target='_blank'
-                aria-label='Facebook'
-                >
-                    <i className="fab fa-facebook-f"></i>
-                </Link>
                 <Link className="social-icon-link instagram"
                 to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0'
                 target='_blank'
@@ -60,8 +53,17 @@ function Footer() {
                 >
                     <i className="fab fa-linkedin"></i>
                 </Link>
-                <Link className="social-icon-link youtube"
+                {/* Once we have more social media sites, more of these can be enabled with their links 
+
+                <Link className="social-icon-link facebook"
                 to='/'
+                target='_blank'
+                aria-label='Facebook'
+                >
+                    <i className="fab fa-facebook-f"></i>
+                </Link>
+                <Link className="social-icon-link youtube"
+                to='https://www.linkedin.com/groups/12112612/'
                 target='_blank'
                 aria-label='YouTube'
                 >
@@ -73,7 +75,7 @@ function Footer() {
                 aria-label='Twitter'
                 >
                     <i className="fab fa-twitter"></i>
-                </Link>
+                </Link> */}
             </div>
         </div>
       </section>

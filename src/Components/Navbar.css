@@ -88,7 +88,7 @@
   @media screen and (max-width: 960px) {
     
     .nav-item {
-      height: 7em;
+      height: 6em;
       vertical-align: middle;
     }
     
@@ -102,10 +102,10 @@
       width: 100%;
       height: 95vh;
       position: fixed;
-      top: 80px;
+      top: 5rem;
       left: -100%;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 0.8s ease;
       justify-content: center;
     }
   
@@ -128,6 +128,7 @@
       background-color: #fff;
       color: #242424;
       border-radius: 0;
+      transition: all 0.4s ease;
     }
   
     .navbar-logo {
@@ -135,6 +136,8 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+      color: rgb(28, 27, 27);
+      transition: color 0.3s ease;
     }
   
     .menu-icon {

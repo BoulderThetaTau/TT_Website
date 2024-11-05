@@ -8,7 +8,7 @@ video {
 
 .hero-container {
     position: relative;
-    background: url('../../public/images/CU_Campus.jpg')
+    background: url('/public/images/CU_Campus.jpg')
     center 
     center/cover
     no-repeat; 

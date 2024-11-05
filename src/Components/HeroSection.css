@@ -7,10 +7,10 @@ video {
 }
 
 .hero-container {
-    background: url('../../public/images/CU_Campus.jpg')
+    /* background: url('../../public/images/CU_Campus.jpg')
     center 
     center/cover
-    no-repeat;
+    no-repeat; */
     height: 100vh;
     width: 100vw;
     display: flex;

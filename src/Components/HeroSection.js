@@ -7,15 +7,15 @@ function HeroSection() {
   return (
     <div className='hero-container'>
         {/* if you don't want the video, comment out the video tag below */}
-      <video src='/videos/video-2.mp4' autoPlay loop muted /> 
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      {/* <video src='/videos/video-2.mp4' autoPlay loop muted />  */}
+      <h1>THETA TAU ETA GAMMA CHAPTER</h1>
+      <p>The Engineering Fraternity at the University of Colorado - Boulder</p>
       <div className='hero-btns'>
         <Button className='btns'
         buttonStyle='btn--outline'
         buttonSize='btn--large'
         >
-            GET STARTED
+            ABOUT
         </Button>
         <Button className='btns'
         buttonStyle='btn--primary'

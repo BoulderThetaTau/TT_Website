@@ -44,7 +44,7 @@ function Footer() {
                     <i className="fab fa-instagram"></i>
                 </Link>
                 <Link className="social-icon-link linkedin"
-                to='/'
+                to='https://www.linkedin.com/groups/12112612/'
                 target='_blank'
                 aria-label='Linkedin'
                 >
@@ -60,6 +60,7 @@ function Footer() {
             
             <div className="social-icons">
               {/* Once we have more social media sites, more of these can be enabled with their links 
+
                 <Link className="social-icon-link instagram"
                 to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0'
                 target='_blank'

@@ -5,41 +5,43 @@ import './Cards.css'
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC destinations!</h1>
+      <h1>More About Eta Gamma</h1>
       <div className='cards__container'>
         <div className='cards_wrapper'>
             <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
-              path='/services'
+              src='images/About_Card.png'
+              text='What is Theta Tau - Eta Gamma Chapter All About?'
+              label='About'
+              path='/about'
             />
             <CardItem
-              src='images/img-2.jpg'
+              src='images/Merc_Card.png'
               text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/services'
+              label='Mercury Council'
+              path='/merc'
             />
             </ul>
             <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/services'
+              src='images/ProfDev_Card.png'
+              text='Members benefit from alumni mentorship, improve job-seeking skills, 
+              practice interview techniques, and take on leadership roles'
+              label='Professional Development'
+              path='/prof-def'
             />
             <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
+              src='images/Brotherhood_Card.JPG'
+              text='Fostering a close-knit community of engineering students through various events'
+              label='Brotherhood'
+              path='/brotherhood'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
+              src='images/CommServe_Card.png'
+              text='Participates in service initiatives with the University and
+              Boulder community. We are also proud partners of Habitat for Humanity.'
+              label='Community Service'
+              path='/comm-serve'
             />
             </ul>
         </div>

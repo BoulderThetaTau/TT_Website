@@ -7,12 +7,13 @@ video {
 }
 
 .hero-container {
-    /* background: url('../../public/images/img-home.jpg') 
+    position: relative;
+    background: url('../../public/images/CU_Campus.jpg')
     center 
     center/cover
-    no-repeat; */
+    no-repeat; 
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,8 +22,28 @@ video {
     object-fit: contain;
 }
 
-.hero-container > h1 {
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha for tint intensity */
+    z-index: 1; /* Place overlay below text but above background */
+}
+
+.hero-container > h1,
+.hero-container > p,
+.hero-btns {
     color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-container > h1 {
+    color: #fff !important;
     font-size: 100px;
     margin-top: -100px;
 }

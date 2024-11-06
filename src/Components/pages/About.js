@@ -1,14 +1,13 @@
 import React from 'react';
-import '../../App.css';
-import '../PagesCSS/About.css';
+import AboutHead from '../AboutHead';
+import Cards from '../Cards';
 
 function About(){
     return(
-        <div className='AboutHead'>
-            <h1>ABOUT</h1>
-            <div className='hero-btns'>
-        </div>
-    </div>
+        <>
+            <AboutHead/>
+            <Cards/>
+        </>
     )
 }
 

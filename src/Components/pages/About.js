@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import '../PagesCSS/About.css';
 
-export default function About(){
+function About(){
     return(
         <div className='AboutHead'>
             <h1>ABOUT</h1>
@@ -11,3 +11,5 @@ export default function About(){
     </div>
     )
 }
+
+export default About

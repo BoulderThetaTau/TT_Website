@@ -23,7 +23,19 @@ function AboutHead(){
                 </div>
                 <div className="AboutEtaGamma">
                     <h1>About Eta Gamma</h1>
-                </div>    
+                        <div className="grid-container" style={{marginTop: '1rem'}}>
+                            <div className="grid-item">
+                                <p>A chapter of the Theta Tau Fraternity that was established in 
+                                    the Spring of 1997. We are based at the University
+                                    of Colorado - Boulder for all engineers. We are also 
+                                    a co-ed Fraternity at this chapter so we curate to all men
+                                    and women engineers.</p>
+                            </div>
+                            <div className="grid-item">
+                                <img src="images/AboutUs.png" alt="About Us Picture" style={{height: '15rem', alignItems: 'start'}} />
+                            </div>
+                        </div>
+                </div> 
             </div>
         </div>
         

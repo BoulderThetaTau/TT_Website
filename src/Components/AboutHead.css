@@ -69,11 +69,47 @@
     font-size: 4rem;
 }
 
+.AboutThetaTau h1::after {
+    content: ""; /* No content, just a decorative line */
+    position: absolute;
+    bottom: 0; /* Align it at the bottom of the text */
+    left: 50%; /* Start from the center horizontally */
+    transform: translateX(-50%); /* Center it under the text */
+    height: .35rem; /* Thickness of the underline */
+    width: 32%; /* Width of the underline */
+    background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+    border-radius: 5px; /* Slightly rounded edges for a softer look */
+}
+
+.AboutEtaGamma h1::after {
+    content: ""; /* No content, just a decorative line */
+    position: absolute;
+    bottom: 0; /* Align it at the bottom of the text */
+    left: 50%; /* Start from the center horizontally */
+    transform: translateX(-50%); /* Center it under the text */
+    height: .35rem; /* Thickness of the underline */
+    width: 35%; /* Width of the underline */
+    background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+    border-radius: 5px; /* Slightly rounded edges for a softer look */
+}
+
 .AboutThetaTau > p,
-.AboutEtaGamma > p{
+.AboutEtaGamma .grid-item  > p {
+    display: block;
+    align-content: center;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    margin-right: 5.5rem;
-    margin-left: 5.5rem;
+    margin-right: 1.5rem;
+    margin-left: 3rem;
     font-size: 1.5rem;
 }
+
+.grid-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right:  4rem;
+    margin-left: .5rem;
+    gap: 1rem;
+}
+

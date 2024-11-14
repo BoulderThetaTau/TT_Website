@@ -17,7 +17,8 @@ function Cards() {
             />
             <CardItem
               src='images/Merc_Card.png'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              text='Learn more about the leaders of Eta Gamma Chapter
+              and how they impact the brothers at Boulder'
               label='Mercury Council'
               path='/merc'
             />

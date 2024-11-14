@@ -32,7 +32,7 @@ function AboutHead(){
                                     and women engineers.</p>
                             </div>
                             <div className="grid-item">
-                                <img src="images/AboutUs.png" alt="About Us Picture" style={{height: '15rem', alignItems: 'start'}} />
+                                <img src="images/AboutUs.png" alt="About Us Picture" />
                             </div>
                         </div>
                 </div> 

@@ -93,6 +93,15 @@
     border-radius: 5px; /* Slightly rounded edges for a softer look */
 }
 
+.grid-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right:  4rem;
+    margin-left: .5rem;
+    gap: 1rem;
+}
+
 .AboutThetaTau > p,
 .AboutEtaGamma .grid-item  > p {
     display: block;
@@ -104,12 +113,28 @@
     font-size: 1.5rem;
 }
 
-.grid-container{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin-right:  4rem;
-    margin-left: .5rem;
-    gap: 1rem;
+.AboutEtaGamma {
+    background-color: rgba(0, 0, 2, 0.036);
+    padding-top: .25rem;
+    padding-bottom: 2rem;
+}
+
+.AboutEtaGamma .grid-item > img {
+    width: 20rem;
+    align-items: start;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    .grid-container {
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .AboutEtaGamma .grid-item > img {
+        width: 30rem;
+        margin-right: none;
+    }
 }
 

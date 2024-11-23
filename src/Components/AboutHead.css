@@ -5,7 +5,7 @@
     center 
     center/cover
     no-repeat; 
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -55,12 +55,31 @@
 
 .AboutThetaTau > h1,
 .AboutThetaTau > p,
-.AboutEtaGamma > h1,
-.AboutEtaGamma >p {
+.AboutEtaGamma > p {
     color: black;
     position: relative;
     z-index: 2;
     text-align: center;
+}
+
+.AboutEtaGamma > p {
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.AboutEtaGamma > h1 {
+    color: black;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.AboutPage .AboutBody .AboutThetaTau > p {
+    margin-right: 15rem;
+    margin-left: 15rem;
+    font-weight: lighter;
 }
 
 .AboutThetaTau > h1,
@@ -76,19 +95,7 @@
     left: 50%; /* Start from the center horizontally */
     transform: translateX(-50%); /* Center it under the text */
     height: .35rem; /* Thickness of the underline */
-    width: 32%; /* Width of the underline */
-    background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
-    border-radius: 5px; /* Slightly rounded edges for a softer look */
-}
-
-.AboutEtaGamma h1::after {
-    content: ""; /* No content, just a decorative line */
-    position: absolute;
-    bottom: 0; /* Align it at the bottom of the text */
-    left: 50%; /* Start from the center horizontally */
-    transform: translateX(-50%); /* Center it under the text */
-    height: .35rem; /* Thickness of the underline */
-    width: 35%; /* Width of the underline */
+    width: 25rem; /* Width of the underline */
     background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
     border-radius: 5px; /* Slightly rounded edges for a softer look */
 }
@@ -120,12 +127,30 @@
 }
 
 .AboutEtaGamma .grid-item > img {
-    width: 20rem;
+    width: 30rem;
     align-items: start;
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
+    .AboutThetaTau > h1,
+    .AboutEtaGamma > h1 {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .AboutThetaTau h1::after {
+        content: ""; /* No content, just a decorative line */
+        position: absolute;
+        bottom: 0; /* Align it at the bottom of the text */
+        left: 50%; /* Start from the center horizontally */
+        transform: translateX(-50%); /* Center it under the text */
+        height: .35rem; /* Thickness of the underline */
+        width: 15rem; /* Width of the underline */
+        background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+        border-radius: 5px; /* Slightly rounded edges for a softer look */
+    }
+    
     .grid-container {
         flex-direction: column;
         margin-right: 0;
@@ -133,8 +158,26 @@
     }
 
     .AboutEtaGamma .grid-item > img {
+        display: flex;
         width: 30rem;
         margin-right: none;
+        padding-right: 0;
+    }
+    .AboutPage .AboutBody .AboutThetaTau > p {
+        margin-right: 3rem;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+    .AboutEtaGamma h1 {
+        text-align: center;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .AboutEtaGamma .grid-item > img {
+        display: flex;
+        width: 20rem;
+        margin-right: none;
+        padding-right: 0;
+    }
+}

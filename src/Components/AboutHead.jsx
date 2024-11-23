@@ -10,8 +10,9 @@ function AboutHead(){
             </div>
             <div className="AboutBody">
                 <div className="AboutThetaTau">
-                    <h1>About Theta Tau</h1>
-                    <p>Theta Tau is the oldest, largest, and 
+                    <h1 style={{color: 'rgb(139, 0, 0)'}}>About Theta Tau</h1>
+                    <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
+                        Theta Tau is the oldest, largest, and 
                         foremost Fraternity for Engineers. 
                         Since its founding at the University 
                         of Minnesota in 1904, over 40,000 brothers 
@@ -22,10 +23,11 @@ function AboutHead(){
                         accredited schools.</p>
                 </div>
                 <div className="AboutEtaGamma">
-                    <h1>About Eta Gamma</h1>
                         <div className="grid-container" style={{marginTop: '1rem'}}>
                             <div className="grid-item">
-                                <p>A chapter of the Theta Tau Fraternity that was established in 
+                                <h1>About Eta Gamma</h1>
+                                <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
+                                    A chapter of the Theta Tau Fraternity that was established in 
                                     the Spring of 1997. We are based at the University
                                     of Colorado - Boulder for all engineers. We are also 
                                     a co-ed Fraternity at this chapter so we curate to all men

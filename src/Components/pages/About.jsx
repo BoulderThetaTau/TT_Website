@@ -1,8 +1,8 @@
 import React from "react";
-import '../App.css';
-import './AboutHead.css';
+import '../../App.css';
+import './pagesCSS/About.css';
 
-function AboutHead(){
+function About(){
     return(
         <div className="AboutPage">
             <div className='AboutHead'>
@@ -44,4 +44,4 @@ function AboutHead(){
     )
 }
 
-export default AboutHead
+export default About

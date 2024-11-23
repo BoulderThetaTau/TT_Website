@@ -20,7 +20,7 @@ function App() {
         <Route path='/about' Component={About}/>
         <Route path='/brotherhood' Component={Brotherhood} />
         <Route path='/comm-serve' Component={CommServ} />
-        <Route path='prof-def' Component={ProfDef} />
+        <Route path='/prof-def' Component={ProfDef} />
         <Route path='/sign-up' Component={SignUp} />
       </Routes>
       <Footer />

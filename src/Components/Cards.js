@@ -5,7 +5,7 @@ import './Cards.css'
 function Cards() {
   return (
     <div className='cards'>
-      <h1>More About Eta Gamma</h1>
+      <h1 style={{fontSize: '2rem'}}>More About Eta Gamma</h1>
       <div className='cards__container'>
         <div className='cards_wrapper'>
             <ul className='cards__items'>

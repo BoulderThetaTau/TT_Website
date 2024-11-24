@@ -1,3 +1,9 @@
+# My notes!
+## Using tailwind
+Whenever you want to use tailwind when creating your inline CSS, make sure you have are using this command
+in one of your terminal windows:
+### `npx tailwindcss -i ./src/App.css -o ./src/output.css --watch`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

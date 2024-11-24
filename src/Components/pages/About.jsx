@@ -2,56 +2,6 @@ import React, {useState} from "react";
 import '../../App.css';
 import './pagesCSS/About.css';
 
-function FusionBox() {
-    const [activeIndex, setActiveIndex] = useState(null);
-  
-    const toggle = (index) => {
-      setActiveIndex(activeIndex === index ? null : index);
-    };
-  
-    const goals = [
-      {
-        title: 'For our Brotherhood:',
-        content:
-          'We forge lifelong bonds of fraternal friendship, a journey that develops and delivers a network of lasting personal and professional relationships.',
-      },
-      {
-        title: 'For our Profession:',
-        content:
-          'We develop and nurture engineers with strong communication, problem-solving, collaboration, and leadership skills.',
-      },
-      {
-        title: 'For our Communities:',
-        content:
-          'Our service projects create a unifying environment for learning and personal growth for our members.',
-      },
-    ];
-    return (
-        <div className="bg-white shadow-lg rounded-lg p-6 mb-6 w-full max-w-5xl sm:w-[80%] lg:w-[70%] mx-auto">
-          <h2 className="text-2xl font-bold mb-4">Our Goals</h2>
-          <div className="space-y-4">
-            {goals.map((goal, index) => (
-              <div key={index}>
-                <button
-                  onClick={() => toggle(index)}
-                  className="w-full text-left font-semibold text-lg p-4 bg-gray-100 hover:bg-thetaTauRed hover:text-white rounded-md transition-colors duration-300"
-                >
-                  {goal.title}
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    activeIndex === index ? 'max-h-screen' : 'max-h-0'
-                  }`}
-                >
-                  <p className="p-4 text-gray-700">{goal.content}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-};    
-
 function About(){
     return(
         <div className="AboutPage">
@@ -90,7 +40,7 @@ function About(){
                 </div>
                 <div className="AboutPillars">
                     <h1>Our Core Pillars</h1>
-                    <div className="flex items-center justify-center" style={{paddingTop: '1rem'}}>
+                    <div className="flex items-center justify-center">
                         <FusionBox />
                     </div>
                 </div> 
@@ -99,5 +49,54 @@ function About(){
         
     )
 }
+
+function FusionBox() {
+    const [activeIndex, setActiveIndex] = useState(null);
+  
+    const toggle = (index) => {
+      setActiveIndex(activeIndex === index ? null : index);
+    };
+  
+    const goals = [
+      {
+        title: 'Brotherhood:',
+        content:
+          'Theta Tau works to create a close-knit community of engineering students - both at the undergraduate and graduate levels. Through events like retreat, campfire, formal, intermural sports, study sessions, and more, Theta Tau has created many strong, long-lasting friendships.',
+      },
+      {
+        title: 'Professional Development:',
+        content:
+          'Members have the ability to interact with alumni already in the workforce, gain advice for finding internships, create and improve resumés and social network profiles (i.e. LinkedIn, Handshake), practice interviewing, and hold various leadership positions.',
+      },
+      {
+        title: 'Community Service:',
+        content:
+          'Theta Tau frequently hosts and participates in service events. We enjoy giving back to the University and greater Boulder community. Theta Tau is also partners with Habitat for Humanity!',
+      },
+    ];
+    return (
+        <div className="bg-white shadow-lg rounded-lg p-6 mb-6 w-full max-w-5xl sm:w-[80%] lg:w-[70%] mx-auto">
+          <div className="space-y-4">
+            {goals.map((goal, index) => (
+              <div key={index}>
+                <button
+                  onClick={() => toggle(index)}
+                  className="w-full text-left font-semibold text-lg p-4 bg-gray-100 hover:bg-thetaTauRed hover:text-white rounded-md transition-colors duration-300"
+                >
+                  {goal.title}
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-700 ${
+                    activeIndex === index ? 'max-h-screen' : 'max-h-0'
+                  }`}
+                >
+                  <p className="p-4 text-gray-700">{goal.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+};    
 
 export default About

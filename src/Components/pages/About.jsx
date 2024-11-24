@@ -37,6 +37,9 @@ function About(){
                                 <img src="images/AboutUs.png" alt="About Us Picture" />
                             </div>
                         </div>
+                </div>
+                <div className="AboutPillars">
+
                 </div> 
             </div>
         </div>

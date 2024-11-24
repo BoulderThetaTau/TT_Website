@@ -35,6 +35,8 @@ function Navbar() {
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
               </div>
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                {/* Want to add this component for buttons, but complete on another branch
+                transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-red-800 */}
                 <li className='nav-item'>
                   <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     Home

@@ -33,7 +33,7 @@ function About(){
                                     a co-ed Fraternity at this chapter so we curate to all men
                                     and women engineers.</p>
                             </div>
-                            <div className="grid-item">
+                            <div className="grid-item aboutImg">
                                 <img src="images/AboutUs.png" alt="About Us Picture" />
                             </div>
                         </div>

@@ -76,6 +76,10 @@
     margin-left: 2rem;
 }
 
+.AboutEtaGamma .aboutImg {
+    width: 65rem;
+}
+
 .AboutPage .AboutBody .AboutThetaTau > p {
     margin-right: 15rem;
     margin-left: 15rem;
@@ -86,6 +90,10 @@
 .AboutEtaGamma > h1 {
     margin-top: 2rem;
     font-size: 4rem;
+}
+
+.AboutEtaGamma .grid-item > h1 {
+    font-size: 2rem;
 }
 
 .AboutThetaTau h1::after {
@@ -171,13 +179,18 @@
     .AboutEtaGamma h1 {
         text-align: center;
     }
+
+    .AboutEtaGamma .aboutImg {
+        display: flex;
+        justify-content: center;
+        width: 25rem;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .AboutEtaGamma .grid-item > img {
+@media screen and (max-width: 450px) {
+    .AboutEtaGamma .aboutImg {
         display: flex;
-        width: 20rem;
-        margin-right: none;
-        padding-right: 0;
+        justify-content: center;
+        width: 15rem;
     }
 }

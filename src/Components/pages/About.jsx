@@ -1,6 +1,12 @@
 import React, {useState} from "react";
 import '../../App.css';
 import './pagesCSS/About.css';
+import Particles from "react-tsparticles";
+
+const particlesInit = async (main) => {
+    // This loads the full tsParticles bundle
+    await loadFull(main);
+};
 
 function About(){
     return(
@@ -24,19 +30,32 @@ function About(){
                 </div>
                 <div className="AboutEtaGamma">
                         <div className="grid-container" style={{marginTop: '1rem'}}>
-                            <div className="grid-item">
-                                <h1>About Eta Gamma</h1>
-                                <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
-                                    A chapter of the Theta Tau Fraternity that was established in 
-                                    the Spring of 1997. We are based at the University
-                                    of Colorado - Boulder for all engineers. We are also 
-                                    a co-ed Fraternity at this chapter so we curate to all men
-                                    and women engineers.</p>
-                            </div>
+                                <div className="grid-item EtaGammaDesc">
+                                    <h1>About Eta Gamma</h1>
+                                    <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
+                                        A chapter of the Theta Tau Fraternity that was established in 
+                                        the Spring of 1997. We are based at the University
+                                        of Colorado - Boulder for all engineers. We are also 
+                                        a co-ed Fraternity at this chapter so we curate to all men
+                                        and women engineers.</p>
+                                </div>
                             <div className="grid-item aboutImg">
                                 <img src="images/AboutUs.png" alt="About Us Picture" />
                             </div>
                         </div>
+                </div>
+                <div className="MoreAboutUs">
+                    <div className="grid-container">
+                        <div className="grid-item NotJustAFrat">
+                            <h1>Being a Fraternity is Only Part of It</h1>
+                            <h2>
+                                
+                            </h2>
+                        </div>
+                        <div className="grid-item">
+                            <h1>More Chapter Info</h1>
+                        </div>
+                    </div>
                 </div>
                 <div className="AboutPillars">
                     <h1>Our Core Pillars</h1>
@@ -86,7 +105,7 @@ function FusionBox() {
                   {goal.title}
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-700 ${
+                  className={`overflow-hidden transition-all duration-300 ${
                     activeIndex === index ? 'max-h-screen' : 'max-h-0'
                   }`}
                 >

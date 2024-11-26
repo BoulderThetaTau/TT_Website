@@ -138,6 +138,18 @@
     margin-right: .5rem;
 }
 
+/* More About Us Div */
+
+.MoreAboutUs .grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.MoreAboutUs .grid-container .grid-item > h1 {
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 850px) {
     .AboutThetaTau > h1,
     .AboutEtaGamma > h1 {

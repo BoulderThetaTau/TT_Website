@@ -2,11 +2,49 @@ import React from 'react';
 import { Button } from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import Particles from "react-tsparticles";
+import {loadFull} from "tsparticles";
+
+const particlesInit = async (main) => {
+  // This loads the full tsParticles bundle
+  await loadFull(main);
+};
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <div className='footer-links'>
+    <div className='footer-container relative'>
+      <Particles
+        className="absolute inset-0 z-0" // Ensure it fills the parent
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          fullScreen:{
+            enable: false
+          },
+          particles: {
+            number: { value: 65, density: { enable: true, area: 800 } },
+            links: { enable: true, color: "#ffffff", opacity: 0.50, distance: 125},
+            move: { enable: true, speed: 2, out_mode: {default: "bounce"}},
+            size: { value: 3 },
+          },
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+              onClick: { enable: true, mode: "push" },
+            },
+            modes: {
+              repulse: { distance: 100 },
+              push: { quantity: 1 },
+            },
+          },
+          detectRetina: true,
+        }}
+        style={{
+          height: "100%", // Constrain to parent height
+          width: "100%", // Constrain to parent width
+        }}
+      />
+      <div className='footer-links z-10'>
         <div className='footer-link-wrapper' style={{gap: '5px'}}>
           <div className='footer-link-items footer-logo'>
             <img src='../public/images/ThetaTauLogo.png'></img>
@@ -55,7 +93,7 @@ function Footer() {
             </div>
         </div>
       </div>
-      <section className="social-media">
+      <section className="social-media z-10">
         <div className="social-media-wrap">
             <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2024</small>
             

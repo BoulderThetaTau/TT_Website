@@ -140,13 +140,24 @@
 
 /* More About Us Div */
 
-.MoreAboutUs .grid-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.MoreAboutUs {
+    margin-top: 2rem;
 }
 
-.MoreAboutUs .grid-container .grid-item > h1 {
+.MoreAboutUs .grid-item > h1 {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    height: 1.75rem;
+}
+
+.MoreAboutUs .grid-item > p {
+    display: block;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     font-size: 1.5rem;
 }
 

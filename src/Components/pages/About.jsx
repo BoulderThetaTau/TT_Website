@@ -1,12 +1,6 @@
 import React, {useState} from "react";
 import '../../App.css';
 import './pagesCSS/About.css';
-import Particles from "react-tsparticles";
-
-const particlesInit = async (main) => {
-    // This loads the full tsParticles bundle
-    await loadFull(main);
-};
 
 function About(){
     return(
@@ -45,15 +39,26 @@ function About(){
                         </div>
                 </div>
                 <div className="MoreAboutUs">
-                    <div className="grid-container">
+                    <div className="grid grid-cols-1 mobile:grid-cols-2">
                         <div className="grid-item NotJustAFrat">
                             <h1>Being a Fraternity is Only Part of It</h1>
-                            <h2>
-                                
-                            </h2>
+                            <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
+                                Everyone knows that going to top tier engineering school,
+                                it ain't going to be easy. That's where members of Theta Tau
+                                can bond over the hardships of the curriculum or the upper-classmen
+                                can help the lower-classmen on their path. 
+                            </p>
                         </div>
                         <div className="grid-item">
-                            <h1>More Chapter Info</h1>
+                            <h1>Our Purpose</h1>
+                            <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
+                            The purpose of Theta Tau is to develop and maintain a high standard
+                            of professional interest among its members, and to unite them in a 
+                            strong bond of fraternal fellowship.
+                            </p>
+                        </div>
+                        <div className="grid-item">
+                            <img src="url(/pages/images/campfire.png)" alt="CampFire" />
                         </div>
                     </div>
                 </div>

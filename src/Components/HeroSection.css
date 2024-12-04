@@ -7,11 +7,7 @@ video {
 }
 
 .hero-container {
-    position: relative;
-    background: url('/public/images/CU_Campus.jpg')
-    center 
-    center/cover
-    no-repeat; 
+    position: relative; 
     height: 75vh;
     width: 100vw;
     display: flex;
@@ -31,6 +27,22 @@ video {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha for tint intensity */
     z-index: 1; /* Place overlay below text but above background */
+}
+
+.hero-container::after {
+    z-index: -1;
+    content:'';
+    background: url('/public/images/CU_Campus.jpg')
+    center 
+    center/cover
+    no-repeat
+    ;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
 }
 
 .hero-container > h1,

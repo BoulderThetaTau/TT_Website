@@ -16,7 +16,13 @@
     width: 90%;
     margin: 0 auto;
   }
-  
+
+  .label-thetaTauRed::after {
+    background-color: #8B0000 !important; /* Dark Red */
+    color: #fff; /* Text color */
+    border-radius: 4px;
+  }  
+
   .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;

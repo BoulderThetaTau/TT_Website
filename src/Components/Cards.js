@@ -14,6 +14,7 @@ function Cards() {
               text='What is Theta Tau - Eta Gamma Chapter All About?'
               label='About'
               path='/about'
+              labelColor='thetaTauRed'
             />
             <CardItem
               src='images/Merc_Card.png'
@@ -21,6 +22,7 @@ function Cards() {
               and how they impact the brothers at Boulder'
               label='Mercury Council'
               path='/merc'
+              labelColor='thetaTauRed'
             />
             </ul>
             <ul className='cards__items'>
@@ -30,12 +32,14 @@ function Cards() {
               practice interview techniques, and take on leadership roles'
               label='Professional Development'
               path='/prof-def'
+              labelColor='thetaTauRed'
             />
             <CardItem
               src='images/Brotherhood_Card.JPG'
               text='Fostering a close-knit community of engineering students through various events'
               label='Brotherhood'
               path='/brotherhood'
+              labelColor='thetaTauRed'
             />
             <CardItem
               src='images/CommServe_Card.png'
@@ -43,6 +47,7 @@ function Cards() {
               Boulder community. We are also proud partners of Habitat for Humanity.'
               label='Community Service'
               path='/comm-serve'
+              labelColor='thetaTauRed'
             />
             </ul>
         </div>

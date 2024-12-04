@@ -1,10 +1,6 @@
 /* Head Piece */
 .AboutHead {
     position: relative;
-    background: url('/public/images/About_Head.jpg')
-    center 
-    center/cover
-    no-repeat; 
     height: 80vh;
     width: 100vw;
     display: flex;
@@ -24,6 +20,20 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha for tint intensity */
     z-index: 1; /* Place overlay below text but above background */
+}
+
+.AboutPage::after {
+    z-index: -1;
+    content:'';
+    background: url('/public/images/About_Head.jpg')
+    center 
+    center/cover
+    no-repeat; 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:90vh;
 }
 
 .AboutHead > h1,
@@ -50,7 +60,7 @@
 
 /* Body */
 .AboutBody {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 .AboutThetaTau > h1,

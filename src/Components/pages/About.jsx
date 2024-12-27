@@ -34,11 +34,11 @@ function About(){
                                         and women engineers.</p>
                                 </div>
                             <div className="grid-item aboutImg">
-                                <img src="images/AboutUs.png" alt="About Us Picture" />
+                                <img src="images/AboutUs.png" className="shadow-xl" alt="About Us Picture" />
                             </div>
                         </div>
                 </div>
-                <div className="MoreAboutUs">
+                <div className="MoreAboutUs" style={{paddingBottom: "1rem"}}>
                     <div className="grid grid-cols-1 mobile:grid-cols-2">
                         <div className="grid-item NotJustAFrat">
                             <h1>Being a Fraternity is Only Part of It</h1>
@@ -57,8 +57,11 @@ function About(){
                             strong bond of fraternal fellowship.
                             </p>
                         </div>
-                        <div className="grid-item">
-                            <img src="url(/pages/images/campfire.png)" alt="CampFire" />
+                        <div className="grid-item AboutPics">
+                            <img src="images/CampFire.png" className="shadow-xl" style={{width: "25rem"}} alt="CampFire"/>
+                        </div>
+                        <div className="grid-item AboutPics" style={{paddingTop: ".5rem"}}>
+                            <img src="images/White_Lies.png" className="shadow-xl" style={{width: "25rem"}} alt="CampFire"/>
                         </div>
                     </div>
                 </div>

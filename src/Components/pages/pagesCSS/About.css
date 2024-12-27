@@ -98,6 +98,14 @@
     padding-left: 2.75rem;
 }
 
+.AboutPillars {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url('/public/images/jacqueminot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .AboutPillars > h1 {
     display: flex;
     justify-content: space-evenly;
@@ -146,6 +154,7 @@
     width: 30rem;
     align-items: start;
     margin-right: .5rem;
+    border-radius: 5%;
 }
 
 /* More About Us Div */
@@ -171,11 +180,24 @@
     font-size: 1.5rem;
 }
 
+.AboutPics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+        border-radius: 5%;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .AboutThetaTau > h1,
     .AboutEtaGamma > h1 {
         margin-top: 2rem;
         font-size: 2.5rem;
+    }
+
+    .AboutPillars {
+        background-size: contain;
     }
 
     .AboutPillars > h1 {
@@ -226,6 +248,10 @@
     .AboutEtaGamma .aboutImg {
         display: flex;
         justify-content: center;
+        width: 15rem;
+    }
+
+    .AboutPics > img {
         width: 15rem;
     }
 }

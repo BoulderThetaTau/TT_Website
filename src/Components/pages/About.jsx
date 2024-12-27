@@ -43,8 +43,8 @@ function About(){
                         <div className="grid-item NotJustAFrat">
                             <h1>Being a Fraternity is Only Part of It</h1>
                             <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
-                                Everyone knows that going to top tier engineering school,
-                                it ain't going to be easy. That's where members of Theta Tau
+                                Everyone knows that going to proclaimed engineering school
+                                isn't going to be easy. That's where members of Theta Tau
                                 can bond over the hardships of the curriculum or the upper-classmen
                                 can help the lower-classmen on their path. 
                             </p>
@@ -69,6 +69,15 @@ function About(){
                     <h1>Our Core Pillars</h1>
                     <div className="flex items-center justify-center">
                         <FusionBox />
+                    </div>
+                    <div className="Motto grid grid-cols-1 mobile:grid-cols-2">
+                      <div className="grid-item MottoImg">
+                          <img src="images/Motto_Img.png" className="shadow-2xl" alt="Motto Image"/>
+                      </div>
+                      <div className="grid-item grid grid-cols-1 MottoVerbage">
+                        <h2 style={{color: 'rgb(139, 0, 0)'}}>Open Motto</h2>
+                        <p>“Whatsoever thy hand findeth to do, do it with thy might;…”</p>
+                      </div>
                     </div>
                 </div> 
             </div>

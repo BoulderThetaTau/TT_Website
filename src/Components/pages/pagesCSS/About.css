@@ -100,7 +100,7 @@
 
 .CoreValues {
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
     url('/public/images/jacqueminot.png')
     center 
     center/cover
@@ -198,15 +198,55 @@
     }
 }
 
+/* Motto Section */
+
+.Motto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+.MottoVerbage {
+    margin: 2rem;
+}
+
+.MottoVerbage > h2 {
+    font-size: 3rem;
+    position: relative;
+}
+
+.MottoVerbage > p {
+    font-size: 1.25rem;
+}
+
+.MottoImg > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 35rem;
+    padding-left: .5rem;
+}
+
+.MottoVerbage h2::after {
+    content: ""; /* No content, just a decorative line */
+    position: absolute;
+    bottom: 0px; /* Adjust based on the distance below the text */
+    left: 28.25%; /* Center horizontally relative to the text */
+    transform: translateX(-50%); /* Center alignment under the text */
+    height: 0.35rem; /* Thickness of the underline */
+    width: 13.5rem; /* Width of the underline */
+    background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+    border-radius: 5px; /* Slightly rounded edges for a softer look */
+}
+
 @media screen and (max-width: 850px) {
     .AboutThetaTau > h1,
     .AboutEtaGamma > h1 {
         margin-top: 2rem;
         font-size: 2.5rem;
-    }
-
-    .CoreValues {
-        background-size: contain;
     }
 
     .CoreValues > h1 {
@@ -250,6 +290,29 @@
         display: flex;
         justify-content: center;
         width: 25rem;
+    }
+
+    .MottoImg > img {
+        width: 25rem;
+        padding-left: 0;
+    }
+
+    .MottoVerbage {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .MottoVerbage > h2 {
+        font-size: 2.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .MottoVerbage h2::after {
+        left: 18.5%; /* Center horizontally relative to the text */
+        transform: translateX(-50%); /* Center alignment under the text */
+        height: 0.35rem; /* Thickness of the underline */
+        width: 10rem; /* Width of the underline */
+        bottom: 1rem;
     }
 }
 

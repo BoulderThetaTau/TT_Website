@@ -65,7 +65,7 @@ function About(){
                         </div>
                     </div>
                 </div>
-                <div className="AboutPillars">
+                <div className="CoreValues">
                     <h1>Our Core Pillars</h1>
                     <div className="flex items-center justify-center">
                         <FusionBox />

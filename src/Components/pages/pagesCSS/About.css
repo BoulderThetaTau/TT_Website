@@ -98,15 +98,22 @@
     padding-left: 2.75rem;
 }
 
-.AboutPillars {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('/public/images/jacqueminot.png');
+.CoreValues {
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+    url('/public/images/jacqueminot.png')
+    center 
+    center/cover
+    no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 0;
+    z-index: 1; 
+    overflow: visible;
 }
 
-.AboutPillars > h1 {
+.CoreValues > h1 {
     display: flex;
     justify-content: space-evenly;
     font-size: 2rem;
@@ -161,6 +168,8 @@
 
 .MoreAboutUs {
     margin-top: 2rem;
+    /* Future Consideration, to have flower background here, right now it just makes 
+    it look a little messy */
 }
 
 .MoreAboutUs .grid-item > h1 {
@@ -196,11 +205,11 @@
         font-size: 2.5rem;
     }
 
-    .AboutPillars {
+    .CoreValues {
         background-size: contain;
     }
 
-    .AboutPillars > h1 {
+    .CoreValues > h1 {
         font-size: 2.5rem;
     }
 

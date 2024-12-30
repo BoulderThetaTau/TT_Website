@@ -35,7 +35,7 @@ function Cards() {
               labelColor='thetaTauRed'
             />
             <CardItem
-              src='images/Brotherhood_Card.JPG'
+              src='images/Brotherhood_Card.png'
               text='Fostering a close-knit community of engineering students through various events'
               label='Brotherhood'
               path='/brotherhood'

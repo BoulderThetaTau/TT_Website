@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 import Brotherhood from './Components/pages/Brotherhood';
 import CommServ from './Components/pages/CommServe';
 import ProfDef from './Components/pages/ProfDef';
+import Merc from './Components/pages/Merc';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/comm-serve' Component={CommServ} />
         <Route path='/prof-def' Component={ProfDef} />
         <Route path='/sign-up' Component={SignUp} />
+        <Route path='/merc' Component={Merc} />
       </Routes>
       <Footer />
     </Router>

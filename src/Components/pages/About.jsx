@@ -76,7 +76,9 @@ function About(){
                       </div>
                       <div className="grid-item grid grid-cols-1 MottoVerbage">
                         <h2 style={{color: 'rgb(139, 0, 0)'}}>Open Motto</h2>
-                        <p>“Whatsoever thy hand findeth to do, do it with thy might;…”</p>
+                        <p><em>“Whatsoever thy hand findeth to do,</em></p>
+                        <p><em>do it with thy might;…”</em></p>
+                        <p style={{color: "#636363"}}>– Ecclesiastes 9:10</p>
                       </div>
                     </div>
                 </div> 

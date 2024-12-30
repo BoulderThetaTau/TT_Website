@@ -218,7 +218,7 @@
 }
 
 .MottoVerbage > p {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .MottoImg > img {
@@ -227,7 +227,7 @@
     align-items: center;
     border-radius: 5%;
     width: 35rem;
-    padding-left: .5rem;
+    margin-left: .5rem;
 }
 
 .MottoVerbage h2::after {
@@ -308,7 +308,7 @@
     }
 
     .MottoVerbage h2::after {
-        left: 18.5%; /* Center horizontally relative to the text */
+        left: 21.5%; /* Center horizontally relative to the text */
         transform: translateX(-50%); /* Center alignment under the text */
         height: 0.35rem; /* Thickness of the underline */
         width: 10rem; /* Width of the underline */

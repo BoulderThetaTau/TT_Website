@@ -70,7 +70,7 @@ function About(){
                     <div className="flex items-center justify-center">
                         <FusionBox />
                     </div>
-                    <div className="Motto grid grid-cols-1 mobile:grid-cols-2">
+                    <div className="Motto grid grid-cols-2">
                       <div className="grid-item MottoImg">
                           <img src="images/Motto_Img.png" className="shadow-2xl" alt="Motto Image"/>
                       </div>

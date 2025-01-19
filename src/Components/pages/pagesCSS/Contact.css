@@ -57,3 +57,45 @@
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* Body */
+
+.ContactBody {
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.ContactInfo {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+
+.EtaGammaContact {
+
+    > h2 {
+        font-size: 2.5rem;
+        color: rgb(89, 88, 88);
+    }
+
+    h2 ::after {
+        content: ""; /* No content, just a decorative line */
+        position: absolute;
+        bottom: 0px; /* Adjust based on the distance below the text */
+        left: 28.25%; /* Center horizontally relative to the text */
+        transform: translateX(-50%); /* Center alignment under the text */
+        height: 0.35rem; /* Thickness of the underline */
+        width: 13.5rem; /* Width of the underline */
+        background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+        border-radius: 5px; /* Slightly rounded edges for a softer look */
+    }
+}
+
+.NationalsContact {
+    margin-top: 1rem;
+    > h2 {
+        font-size: 2.5rem;
+        color: rgb(89, 88, 88);
+    }
+}

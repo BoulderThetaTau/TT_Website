@@ -22,7 +22,7 @@
     z-index: 1; /* Place overlay below text but above background */
 }
 
-.ContactPage::after {
+.AboutPage::after {
     z-index: -1;
     content:'';
     background: url('/public/images/About_Head.jpg')

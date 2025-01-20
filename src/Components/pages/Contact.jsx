@@ -10,15 +10,15 @@ function Contact(){
             </div>
             <div className="ContactBody">
                 <div className="ContactInfo columns-2 grid">
+                    <h1>Eta Gamma Chapter</h1>
                     <div className="EtaGammaContact grid-flow-row">
-                        <h2>Eta Gamma Chapter</h2>
                         <div className="columns-1">
                             <p>email:</p>
                             <p>School Address:</p>
                         </div>
                     </div>
+                <h1>Nationals</h1>
                     <div className="NationalsContact grid">
-                        <h1>Nationals</h1>
                         <div className="NatContactInfo columns-2 grid-flow-col">
                             <i class="fa fa-phone fa-2x bg-thetaTauRed" aria-hidden="true"></i><br />
                             <i class="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>

@@ -17,14 +17,17 @@ function Contact(){
                             <p>School Address:</p>
                         </div>
                     </div>
-                    <div className="NationalsContact grid-flow-row">
-                        <h2>Nationals</h2>
-                        <div className="columns-1">
-                            <p>Phone:</p>
-                            <p>email:</p>
-                            <p>Mailing Address:</p>
-
+                    <div className="NationalsContact grid">
+                        <h1>Nationals</h1>
+                        <div className="NatContactInfo columns-2 grid-flow-col">
+                            <i class="fa fa-phone fa-2x bg-thetaTauRed" aria-hidden="true"></i><br />
+                            <i class="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
+                            <p>(512) 472-1904</p>
+                            <p>central.office@thetatau.org</p>
                         </div>
+                        <h2 className="text-thetaTauRed">Mailing Address:</h2>
+                        <p>2131 W. Republic Road #528 <br />
+                        Springfield, MO 65807</p>
                     </div>
                 </div>
                 <div className="ContactPhotos">

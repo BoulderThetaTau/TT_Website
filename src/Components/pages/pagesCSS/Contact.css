@@ -64,14 +64,13 @@
     background-color: #fff;
     padding-top: 4rem;
     padding-bottom: 2rem;
-    margin-bottom: 10rem;
 }
 
 .ContactInfo {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
     
     > h1 {
         font-size: 2.5rem;
@@ -131,8 +130,7 @@
 
 .EtaGammaImage {
     > img {
-        margin-left: 3rem;
-        width: 30rem;
+        width: 25rem;
         border-radius: 2%;
     }
 }

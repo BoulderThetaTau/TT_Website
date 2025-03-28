@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c0f0e93.css",
+    "main.js": "/static/js/main.6c5688a8.js",
+    "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
+    "static/media/jacqueminot.png": "/static/media/jacqueminot.129a8b9085b8c0b82053.png",
+    "static/media/img-1.jpg": "/static/media/img-1.53f4843759ebec256cb9.jpg",
+    "static/media/img-8.jpg": "/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
+    "static/media/CU_Campus.jpg": "/static/media/CU_Campus.7b314e5185284756a91d.jpg",
+    "static/media/About_Head.jpg": "/static/media/About_Head.632e582f297de066e454.jpg",
+    "static/media/ThetaTauLogo.png": "/static/media/ThetaTauLogo.9d96a607cef7ba001b6a.png",
+    "index.html": "/index.html",
+    "main.5c0f0e93.css.map": "/static/css/main.5c0f0e93.css.map",
+    "main.6c5688a8.js.map": "/static/js/main.6c5688a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c0f0e93.css",
+    "static/js/main.6c5688a8.js"
+  ]
+}

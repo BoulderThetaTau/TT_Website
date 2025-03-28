@@ -67,7 +67,7 @@ function Footer() {
             </div> */}
             <div className='footer-link-items'>
                 <h2>Contact Us</h2>
-                    <Link to='/'>Contact</Link>
+                    <Link to='/contact'>Contact</Link>
                     <Link to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0' target='_blank'>Instagram</Link>
                     <Link to='https://thetatau.org/' target='_blank'>National Theta Tau</Link>
                     <Link to='mailto:central.office@thetatau.org' className='email-link'>central.office@thetatau.org</Link>

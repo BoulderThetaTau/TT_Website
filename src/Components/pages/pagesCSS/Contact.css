@@ -1,0 +1,182 @@
+/* Head Piece */
+.ContactHead {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgb(0,0,0,0.2);
+    object-fit: contain;
+}
+
+.ContactHead::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* Adjust alpha for tint intensity */
+    z-index: 1; /* Place overlay below text but above background */
+}
+
+.ContactPage::after {
+    z-index: -1;
+    content:'';
+    background: url('/public/images/Contact_Head.png')
+    center 
+    center/cover
+    no-repeat; 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:90vh;
+}
+
+.ContactHead > h1,
+.ContactHead > p,
+.ContactHead {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.ContactHead > h1 {
+    color: #fff !important;
+    font-size: 100px;
+    margin-top: -100px;
+}
+
+.ContactHead > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Body */
+
+.ContactBody {
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.ContactInfo {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    
+    > h1 {
+        font-size: 2.5rem;
+        color: rgb(89, 88, 88);
+    }
+
+    > h2 {
+        font-size: 2rem;
+    }
+}
+
+.EtaGammaContact {
+
+    > h2 {
+        font-size: 2.5rem;
+        color: rgb(89, 88, 88);
+    }
+
+    > h2 ::after {
+        content: ""; /* No content, just a decorative line */
+        position: absolute;
+        bottom: 0px; /* Adjust based on the distance below the text */
+        left: 28.25%; /* Center horizontally relative to the text */
+        transform: translateX(-50%); /* Center alignment under the text */
+        height: 0.35rem; /* Thickness of the underline */
+        width: 13.5rem; /* Width of the underline */
+        background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+        border-radius: 5px; /* Slightly rounded edges for a softer look */
+    }
+
+    
+}
+
+.EtaGammaEmail {
+    > i {
+        background-color: thetaTauRed;
+        padding: .75rem;
+        border-radius: 50%;
+        margin-top: .25rem;
+    }
+}
+
+.EtaGammaAddress, .EtaGammaEmail {
+    > i {
+        background-color: thetaTauRed;
+        padding: .75rem;
+        border-radius: 50%;
+        margin-top: .25rem;
+    }
+
+    > p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.EtaGammaImage {
+    > img {
+        width: 25rem;
+        border-radius: 2%;
+    }
+}
+
+.NationalsContact {
+    margin-top: 1rem;
+    > h1 {
+        font-size: 2.5rem;
+        color: rgb(89, 88, 88);
+    }
+
+    > h2 {
+        font-size: 2rem;
+    }
+
+    > h2 ::after {
+        content: ""; /* No content, just a decorative line */
+        position: absolute;
+        bottom: 0px; /* Adjust based on the distance below the text */
+        left: 0%; /* Center horizontally relative to the text */
+        transform: translateX(-50%); /* Center alignment under the text */
+        height: 0.35rem; /* Thickness of the underline */
+        width: 13.5rem; /* Width of the underline */
+        background-color: rgba(0, 0, 0, 0.2); /* Light grey color for underline */
+        border-radius: 5px; /* Slightly rounded edges for a softer look */
+    }
+
+    > p {
+        font-size: 1.5rem;
+        color: rgb(89, 88, 88);
+    }
+}
+
+.NationalsEmail, .NationalsPhone, .NationalsMailAdd {
+    > h2 {
+        font-size: 2rem;
+    }
+
+    > p {
+        font-size: 1.5rem;
+    }
+
+    > i {
+        background-color: thetaTauRed;
+        padding: .75rem;
+        border-radius: 50%;
+        margin-top: .25rem;
+    }
+}

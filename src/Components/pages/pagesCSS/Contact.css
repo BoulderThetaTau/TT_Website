@@ -113,6 +113,32 @@
     }
 }
 
+/* Getting sizing to break text to avoid overflow */
+
+/* Default styling for the email */
+.EtaGammaEmail p,
+.NationalsEmail p {
+  white-space: nowrap; /* Prevent text from breaking by default */
+  overflow-wrap: break-word; /* Allow breaking if necessary */
+  color: #8B0000; /* Dark red color for the email */
+}
+
+.EtaGammaEmail p:hover,
+.NationalsEmail p:hover {
+  text-decoration: underline; /* Add underline on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: #CFB87C; /* Dark gold color for hover state */
+}
+
+/* Media query for screens below 680px */
+@media (max-width: 640px) {
+  .EtaGammaEmail p,
+  .NationalsEmail p {
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-break: break-word; /* Break long words if necessary */
+  }
+}
+
 .EtaGammaAddress, .EtaGammaEmail {
     > i {
         background-color: thetaTauRed;

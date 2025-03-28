@@ -13,9 +13,11 @@ function Contact(){
                 <div className="MainContact columns-1">
                     <div className="ContactInfo columns-1">
                         <h1>Eta Gamma Chapter</h1>
-                        <div className="EtaGammaEmail columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>
-                            <i class="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
-                            <p>regent@etagamma.org</p>
+                        <div className="EtaGammaEmail columns-2" style={{ marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C" }}>
+                            <i className="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
+                            <p>
+                                <a href="mailto:regent@etagamma.org">regent@etagamma.org</a>
+                            </p>
                         </div>
                         <div className="EtaGammaAddress columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>
                             <i class="fa fa-map-marker fa-2x bg-thetaTauRed" aria-hidden="true"></i>
@@ -29,7 +31,9 @@ function Contact(){
                         </div>
                         <div className="NationalsEmail columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>
                             <i class="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
-                            <p>central.office@thetatau.org</p>
+                            <p>
+                                <a color="thetaTauRed" href="mailto:central.office@thetatau.org">central.office@thetatau.org</a>
+                            </p>
                         </div>
                         <div className="NationalsMailAdd columns-2" style={{marginTop: "1rem"}}>
                             <h2 className="text-thetaTauRed">Mailing Address:</h2>

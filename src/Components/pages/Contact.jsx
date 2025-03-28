@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../../App.css';
 import './pagesCSS/Contact.css';
+import Gallery from "../modules/gallery";
 
 function Contact(){
     return(
@@ -36,9 +37,10 @@ function Contact(){
                             Springfield, MO 65807</p>
                         </div>
                     </div>
-                    <div className="EtaGammaImage justify-center" style={{display: "flex"}}>
-                        <img src="images/EtaGamma_Contact.png" alt="Nationals"/>
-                    </div>
+                    <Gallery />
+                    {/* <div className="EtaGammaImage justify-center" style={{display: "flex"}}>
+                        <img src="images/EtaGamma_Contact.png" alt="Nationals"/> 
+                    </div>*/}
                 </div>
             </div>
         </div>

@@ -47,7 +47,7 @@ function Merc(){
                                 <div className="flex items-center gap-x-8">
                                 {/* Make only the image interactive */}
                                 <img
-                                    className="w-44 h-44 max-w-full max-h-full rounded-full object-cover cursor-pointer"
+                                    className="w-44 h-44 max-w-full max-h-full rounded-full object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
                                     src={merc.image}
                                     alt={merc.name}
                                     onClick={() => setActiveCard(index)} // Open the modal for this card
@@ -131,7 +131,7 @@ function Merc(){
                     </div>
                 </div>
             )}
-            
+
         </div>
     )
 }

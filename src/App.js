@@ -11,6 +11,7 @@ import Brotherhood from './Components/pages/Brotherhood';
 import CommServ from './Components/pages/CommServe';
 import ProfDef from './Components/pages/ProfDef';
 import Merc from './Components/pages/Merc';
+import { app, analytics } from './Firebase'; // Import Firebase configuration
 
 function App() {
   return (

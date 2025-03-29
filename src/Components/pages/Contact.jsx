@@ -32,7 +32,7 @@ function Contact(){
                         <div className="NationalsEmail columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>
                             <i class="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
                             <p>
-                                <a color="thetaTauRed" href="mailto:central.office@thetatau.org">central.office@thetatau.org</a>
+                                <a href="mailto:central.office@thetatau.org">central.office@thetatau.org</a>
                             </p>
                         </div>
                         <div className="NationalsMailAdd columns-2" style={{marginTop: "1rem"}}>

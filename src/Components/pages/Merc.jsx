@@ -23,16 +23,20 @@ function Merc(){
                             <li>
                                 <div class="flex items-center gap-x-8">
                                 <img
-                                    class="rounded-full"
-                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    class="w-44 h-44 max-w-full max-h-full rounded-full object-cover"
+                                    src="images/merc/Regent.png"
                                     alt=""
                                 />
                                 <div>
                                     <h3 class="text-lg font-bold tracking-tight text-gray-900">
-                                    Leslie Alexander
+                                    Payton Campbell
                                     </h3>
-                                    <p class="text-base font-semibold text-indigo-600">
+                                    <p class="text-base font-semibold text-thetaTauRed">
                                     Regent / President
+                                    </p>
+                                    <p class="text-base font-semibold text-thetaTauGold">
+                                    Eta Gamma 382 X! TT! YY! <br />
+                                    Xi Gamma Pledge Class
                                     </p>
                                 </div>
                                 </div>
@@ -40,16 +44,20 @@ function Merc(){
                             <li>
                                 <div class="flex items-center gap-x-8">
                                 <img
-                                    class="rounded-full" 
-                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    class="w-44 h-44 max-w-full max-h-full rounded-full object-cover" 
+                                    src="images/merc/Vice.png"
                                     alt=""
                                 />
                                 <div>
                                     <h3 class="text-lg font-bold tracking-tight text-gray-900">
-                                    Leslie Alexander
+                                    Jayce Wynn
                                     </h3>
-                                    <p class="text-base font-semibold text-indigo-600">
+                                    <p class="text-base font-semibold text-thetaTauRed">
                                     Vice Regent / Vice President
+                                    </p>
+                                    <p class="text-base font-semibold text-thetaTauGold">
+                                    Eta Gamma 441 Y! <br />
+                                    Pi Gamma Pledge Class
                                     </p>
                                 </div>
                                 </div>

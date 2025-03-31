@@ -28,25 +28,26 @@ function Cards() {
             <ul className='cards__items'>
             <CardItem
               src='images/ProfDev_Card.png'
-              text='Members benefit from alumni mentorship, improve job-seeking skills, 
-              practice interview techniques, and take on leadership roles'
-              label='Professional Development'
-              path='/prof-def'
+              text='Have questions about our chapter or want to learn more about Theta Tau?
+              Reach out to us!'
+              label='Contact'
+              path='/contact'
               labelColor='thetaTauRed'
             />
             <CardItem
               src='images/Brotherhood_Card.png'
-              text='Fostering a close-knit community of engineering students through various events'
-              label='Brotherhood'
-              path='/brotherhood'
+              text='Want to rush Eta Gamma Chapter? We are always looking for new brothers to join!
+              Find out more here!'
+              label='Rush'
+              path='/rush'
               labelColor='thetaTauRed'
             />
             <CardItem
               src='images/CommServe_Card.png'
-              text='Participates in service initiatives with the University and
-              Boulder community. We are also proud partners of Habitat for Humanity.'
-              label='Community Service'
-              path='/comm-serve'
+              text='Theta Tau functions on three main values, Brotherhood, Community Service, and
+              Professional Development. You can learn more about them here!'
+              label='Our Three Pillars'
+              path='/About'
               labelColor='thetaTauRed'
             />
             </ul>

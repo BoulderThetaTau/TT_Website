@@ -43,18 +43,18 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/comm-serve' className='nav-links' onClick={closeMobileMenu}>
-                    Community Service
+                  <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                    About
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/brotherhood' className='nav-links' onClick={closeMobileMenu}>
-                    Brotherhood
+                  <Link to='/merc' className='nav-links' onClick={closeMobileMenu}>
+                    Merc Council
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/prof-def' className='nav-links' onClick={closeMobileMenu}>
-                    Professional Development
+                  <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                    Contact
                   </Link>
                 </li>
                 {/* Will need to figure out due to formatting is messed up for this button (grid issue) */}

@@ -8,7 +8,7 @@ const Gallery = () => {
   const images = [
     { src: "images/EtaGamma_Contact.png", alt: "Image 1" },
     { src: "images/CU_Campus.jpg", alt: "Image 2" },
-    { src: "images/Nationals_Contact_Img.png", alt: "Image 3" },
+    { src: "images/RushSpr2025.png", alt: "Image 3" },
     { src: "images/Retreat_2025_1.JPG", alt: "Image 4" },
     { src: "images/Regionals_Spr_2023.png", alt: "Image 5" },
   ];

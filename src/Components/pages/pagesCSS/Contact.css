@@ -130,13 +130,24 @@
   color: #CFB87C; /* Dark gold color for hover state */
 }
 
-/* Media query for screens below 680px */
+/* Media query for screens below 640px */
 @media (max-width: 640px) {
   .EtaGammaEmail p,
   .NationalsEmail p {
     white-space: normal; /* Allow text to wrap to the next line */
     word-break: break-word; /* Break long words if necessary */
   }
+
+  .ContactHead > h1 {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 340px) {
+    .ContactHead > h1 {
+        margin-top: .5rem;
+        font-size: 3rem; /* Adjust font size for even smaller screens */
+    }
 }
 
 .EtaGammaAddress, .EtaGammaEmail {

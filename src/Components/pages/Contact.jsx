@@ -16,7 +16,7 @@ function Contact(){
                         <div className="EtaGammaEmail columns-2" style={{ marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C" }}>
                             <i className="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
                             <p>
-                                <a href="mailto:regent@etagamma.org">regent@etagamma.org</a>
+                                <a className="___" href="mailto:regent@etagamma.org">regent@etagamma.org</a>
                             </p>
                         </div>
                         <div className="EtaGammaAddress columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>

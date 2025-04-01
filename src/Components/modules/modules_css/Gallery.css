@@ -12,11 +12,16 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 400px) {
     .GallerySlide img {
-        width: 23rem;
+        width: 20rem;
+        height: 10rem;
+      }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .GallerySlide img {
+        width: 20rem;
         height: 15rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
   }

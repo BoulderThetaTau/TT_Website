@@ -14,13 +14,13 @@ function Contact(){
                     <div className="ContactInfo columns-1">
                         <h1>Eta Gamma Chapter</h1>
                         <div className="EtaGammaEmail columns-2" style={{ marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C" }}>
-                            <i className="fa fa-envelope fa-2x bg-thetaTauRed" aria-hidden="true"></i>
+                            <i className="fa fa-envelope fa-2x bg-thetaTauRed flex items-center justify-center" aria-hidden="true"></i>
                             <p>
                                 <a href="mailto:regent@etagamma.org">regent@etagamma.org</a>
                             </p>
                         </div>
                         <div className="EtaGammaAddress columns-2" style={{marginTop: "1rem", borderBottom: "solid", paddingBottom: ".5rem", borderColor: "#CFB87C"}}>
-                            <i class="fa fa-map-marker fa-2x bg-thetaTauRed" aria-hidden="true"></i>
+                            <i class="fa fa-map-marker fa-2x bg-thetaTauRed flex items-center justify-center" aria-hidden="true"></i>
                             <p>1111 Engineering Dr,
                             Boulder, CO 80309</p>
                         </div>

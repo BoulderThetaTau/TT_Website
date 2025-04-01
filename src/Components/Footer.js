@@ -34,7 +34,7 @@ function Footer() {
             },
             modes: {
               repulse: { distance: 100 },
-              push: { quantity: 1 },
+              push: { quantity: 0 },
             },
           },
           detectRetina: true,

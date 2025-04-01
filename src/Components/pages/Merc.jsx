@@ -102,17 +102,17 @@ function Merc() {
             </p>
           </div>
           <div className="Regents bg-white py-24 sm:py-32 flex justify-center items-center">
-            <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-2">
+            <div className="mx-auto grid max-w-8xl gap-20 px-6 lg:px-8 xl:grid-cols-2">
               <ul
                 role="list"
-                className="grid gap-y-12 gap-x-20 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+                className="grid gap-y-12 gap-x-20 sm:grid-cols-2 sm:gap-y-10 xl:col-span-2"
               >
                 {mercs.map((merc, index) => (
                   <li key={index}>
                     <div className="flex items-center gap-x-8">
                       {/* Only the image is interactive */}
                       <img
-                        className="w-44 h-44 max-w-full max-h-full rounded-full object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+                        className="w-44 h-44 aspect-square rounded-full object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
                         src={merc.image}
                         alt={merc.name}
                         onClick={() => setActiveCard(index)}

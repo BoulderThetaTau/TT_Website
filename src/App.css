@@ -9,6 +9,10 @@
     font-family: 'PT Sans', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* Adds page style to all the folowing pages */
   
   .home,

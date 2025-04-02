@@ -54,7 +54,7 @@ function Footer() {
                 <Link to='/about'>About Us</Link>
                 <Link to='/'>How it Works</Link>
                 <Link to='/merc'>Mercury Council</Link>
-                <Link to='/'>Alumni</Link>
+                {/* <Link to='/'>Alumni</Link> */}
                 <Link to='/about#core-pillars'>Our Three Pillars</Link>
             </div>
             {/* Once we get more social media platforms, we can uncomment this out 

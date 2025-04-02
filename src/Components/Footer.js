@@ -22,7 +22,7 @@ function Footer() {
             enable: false
           },
           particles: {
-            number: { value: 65, density: { enable: true, area: 800 } },
+            number: { value: 80, density: { enable: true, area: 800 } },
             links: { enable: true, color: "#ffffff", opacity: 0.50, distance: 125},
             move: { enable: true, speed: 2, out_mode: {default: "bounce"}},
             size: { value: 3 },

@@ -332,6 +332,14 @@
         width: 15rem;
     }
 
+    .AboutHead {
+        height: 60vh;
+    }
+
+    .AboutPage::after {
+        height:70vh;
+    }
+
     .AboutPics > img {
         width: 15rem;
     }

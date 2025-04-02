@@ -41,7 +41,7 @@ function About(){
                 <div className="MoreAboutUs" style={{paddingBottom: "1rem"}}>
                     <div className="grid grid-cols-1 mobile:grid-cols-2">
                         <div className="grid-item NotJustAFrat">
-                            <h1>Being a Fraternity is Only Part of It</h1>
+                        <h1 className="text-center mobile:text-left text-xl">Being a Fraternity is Only Part of It</h1>
                             <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
                                 Everyone knows that going to proclaimed engineering school
                                 isn't going to be easy. That's where members of Theta Tau
@@ -50,7 +50,7 @@ function About(){
                             </p>
                         </div>
                         <div className="grid-item">
-                            <h1>Our Purpose</h1>
+                        <h1 className="text-center mobile:text-left text-xl mobile:text-2xl">Our Purpose</h1>
                             <p style={{fontSize: '1.25rem', color: 'rgb(65, 65, 65)'}}>
                             The purpose of Theta Tau is to develop and maintain a high standard
                             of professional interest among its members, and to unite them in a 

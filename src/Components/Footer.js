@@ -95,7 +95,7 @@ function Footer() {
       </div>
       <section className="social-media z-10">
         <div className="social-media-wrap">
-            <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2024</small>
+            <small className="website-rights">THETA TAU ETA GAMMA CHAPTER 2025</small>
             
             <div className="social-icons">
               {/* Once we have more social media sites, more of these can be enabled with their links 

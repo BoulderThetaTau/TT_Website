@@ -67,7 +67,7 @@ function Merc() {
       name: "Julian Werder",
       title: "Outer Guard",
       pledgeClass: "Eta Gamma 417 U! Omicron Gamma Pledge Class",
-      image: "/images/Merc/JulianTemp.png",
+      image: "/images/Merc/OuterGuard.png",
       description:
         "Julian is a sophomore in Electrical and Computer Engineering with minors in Quantum Engineering and Computer Science. He enjoys skiing, F1 racing, and working on cars. As the Outer Guard, Julian is dedicated to creating a welcoming environment for the incoming Sigma Gamma pledge class. He hopes to inspire others and contribute to the lasting legacy of Theta Tau.",
     },

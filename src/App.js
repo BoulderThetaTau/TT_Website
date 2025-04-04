@@ -11,6 +11,7 @@ import Brotherhood from './Components/pages/Brotherhood';
 import CommServ from './Components/pages/CommServe';
 import ProfDef from './Components/pages/ProfDef';
 import Merc from './Components/pages/Merc';
+import Rush from './Components/pages/Rush';
 import ScrollToTop from './Components/ScrollToTop';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { app, analytics } from './Firebase'; // Import Firebase configuration
@@ -30,6 +31,7 @@ function App() {
         <Route path='/prof-def' Component={ProfDef} />
         <Route path='/sign-up' Component={SignUp} />
         <Route path='/merc' Component={Merc} />
+        <Route path='/rush' Component={Rush} />
       </Routes>
       <Footer />
     </Router>

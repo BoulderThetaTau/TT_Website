@@ -35,7 +35,7 @@ function Cards() {
               labelColor='thetaTauRed'
             />
             <CardItem
-              src='images/Brotherhood_Card.png'
+              src='images/Rush_Card.JPG'
               text='Want to rush Eta Gamma Chapter? We are always looking for new brothers to join!
               Find out more here!'
               label='Rush'

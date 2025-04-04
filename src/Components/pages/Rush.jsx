@@ -1,11 +1,16 @@
 import React from 'react';
 import '../../App.css';
+import './pagesCSS/Rush.css';
 
 function Rush() {
     return (
-        <>
-            <h1 className='rush'>Rush</h1>
-        </>
+        <div className='RushPage'>
+            <div className='RushHead'>
+                <h1>Rush</h1>
+            </div>
+        </div>
+            
+        
     )
 }
 

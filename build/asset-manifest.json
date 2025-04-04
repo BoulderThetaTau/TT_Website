@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ae1a2d2.css",
+    "main.css": "/static/css/main.4c4f8e1c.css",
     "main.js": "/static/js/main.cc32ea66.js",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/jacqueminot.png": "/static/media/jacqueminot.129a8b9085b8c0b82053.png",
@@ -23,11 +23,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.7ae1a2d2.css.map": "/static/css/main.7ae1a2d2.css.map",
+    "main.4c4f8e1c.css.map": "/static/css/main.4c4f8e1c.css.map",
     "main.cc32ea66.js.map": "/static/js/main.cc32ea66.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ae1a2d2.css",
+    "static/css/main.4c4f8e1c.css",
     "static/js/main.cc32ea66.js"
   ]
 }

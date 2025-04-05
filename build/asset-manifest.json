@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c4f8e1c.css",
-    "main.js": "/static/js/main.ae925b7a.js",
+    "main.css": "/static/css/main.8772cf15.css",
+    "main.js": "/static/js/main.c7a1c4ef.js",
+    "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
+    "static/media/Rush_Head.JPG": "/static/media/Rush_Head.64be3964ac0ae0cf4c58.JPG",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/jacqueminot.png": "/static/media/jacqueminot.129a8b9085b8c0b82053.png",
     "static/media/Contact_Head.png": "/static/media/Contact_Head.b73aa82fef5dc13052bf.png",
@@ -23,11 +25,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.4c4f8e1c.css.map": "/static/css/main.4c4f8e1c.css.map",
-    "main.ae925b7a.js.map": "/static/js/main.ae925b7a.js.map"
+    "main.8772cf15.css.map": "/static/css/main.8772cf15.css.map",
+    "main.c7a1c4ef.js.map": "/static/js/main.c7a1c4ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c4f8e1c.css",
-    "static/js/main.ae925b7a.js"
+    "static/css/main.8772cf15.css",
+    "static/js/main.c7a1c4ef.js"
   ]
 }

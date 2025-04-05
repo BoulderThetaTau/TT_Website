@@ -28,7 +28,7 @@ function RushOver() {
                                  text-lg font-semibold min-w-[200px]">
                         Contact Page
                     </Link>
-                    <Link to="/merc-council" 
+                    <Link to="/merc" 
                         className="px-8 py-3 bg-thetaTauRed text-thetaTauGold border-2 border-thetaTauGold rounded-lg 
                                  hover:bg-thetaTauGold hover:text-thetaTauRed transition-all duration-300 
                                  text-lg font-semibold min-w-[200px]">

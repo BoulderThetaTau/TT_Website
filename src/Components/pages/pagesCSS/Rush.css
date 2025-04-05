@@ -1,7 +1,7 @@
 /* Head Piece */
 .RushHead {
     position: relative;
-    height: 60vh;
+    height: 65vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Adjust alpha for tint intensity */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha for tint intensity */
     z-index: 1; /* Place overlay below text but above background */
 }
 
@@ -33,7 +33,7 @@
     top:0;
     left:0;
     width:100%;
-    height:90vh;
+    height:74vh;
 }
 
 .RushHead > h1,
@@ -49,4 +49,117 @@
     color: #fff !important;
     font-size: 100px;
     margin-top: -100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.RushHead > h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.RushBody {
+    background-color: #fff;
+}
+
+.RushMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: #fff;
+}
+
+.OtherPages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+/* .RushPage {
+   
+} */
+
+/* Rush Over Page */
+
+.RushOverPage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 75vh;
+}
+
+.RushOverPage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/public/images/Rush_Over.jpg') center center/cover no-repeat;
+    z-index: 0;
+}
+
+/* Keep your existing gradient overlay */
+.RushOverPage .absolute {
+    z-index: 1;
+}
+
+.RushMessage {
+    margin: 3rem 0;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.RushMessage p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.OtherPages {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.OtherPages h2 {
+    color: #8B0000;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.OtherPages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.OtherPages li {
+    margin: 1rem 0;
+}
+
+.OtherPages a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.OtherPages a:hover {
+    color: #8B0000;
+    transform: translateY(-2px);
 }

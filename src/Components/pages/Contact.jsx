@@ -7,7 +7,7 @@ function Contact(){
     return(
         <div className="ContactPage">
             <div className='ContactHead'>
-                <h1>Contact Us</h1>
+                <h1 className='font-bold'>CONTACT</h1>
             </div>
             <div className="ContactBody">
                 <div className="MainContact columns-1">

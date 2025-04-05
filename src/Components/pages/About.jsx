@@ -6,7 +6,7 @@ function About(){
     return(
         <div className="AboutPage">
             <div className='AboutHead'>
-                <h1>ABOUT</h1>
+                <h1 className='font-bold'>ABOUT</h1>
             </div>
             <div className="AboutBody">
                 <div className="AboutThetaTau">

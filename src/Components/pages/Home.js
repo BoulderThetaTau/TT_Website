@@ -6,7 +6,7 @@ import WelcomePopup from '../modules/WelcomePopup';
 function Home (){
     return(
         <>
-            <WelcomePopup />
+            {/* <WelcomePopup /> Regionals 2025, no longer needed */}
             <HeroSection />
             <Cards />
         </>

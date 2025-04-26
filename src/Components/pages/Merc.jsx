@@ -139,38 +139,39 @@ function Merc() {
       </div>
       {/* Overlay Modal */}
       {activeCard !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ease-in-out">
-            <div
+        <div className="fixed inset-0 pt-20 bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ease-in-out">
+          <div
             className={`bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative transform transition-all duration-300 ease-in-out ${
-                isVisible ? "scale-100 opacity-100" : "scale-90 opacity-0"
-            }`}
-            >
+              isVisible ? "scale-95 opacity-100" : "scale-90 opacity-0"
+            } overflow-y-auto max-h-[90vh] sm:max-h-[80vh]`}
+            style={{ overscrollBehavior: 'contain' }}
+          >
             <button
-                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-                onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+              onClick={closeModal}
             >
-                ✕
+              ✕
             </button>
             <img
-                className="w-32 h-32 rounded-full mx-auto object-cover"
-                src={mercs[activeCard].image}
-                alt={mercs[activeCard].name}
+              className="w-32 h-32 rounded-full mx-auto object-cover"
+              src={mercs[activeCard].image}
+              alt={mercs[activeCard].name}
             />
             <h3 className="text-xl font-bold text-center mt-4">
-                {mercs[activeCard].name}
+              {mercs[activeCard].name}
             </h3>
             <p className="text-center text-thetaTauRed font-semibold">
-                {mercs[activeCard].title}
+              {mercs[activeCard].title}
             </p>
             <p className="text-center text-thetaTauGold font-semibold">
-                {mercs[activeCard].pledgeClass}
+              {mercs[activeCard].pledgeClass}
             </p>
             <p className="mt-4 text-gray-700 text-sm">
-                {mercs[activeCard].description}
+              {mercs[activeCard].description}
             </p>
-            </div>
+          </div>
         </div>
-    )}
+      )}
     </div>
   );
 }

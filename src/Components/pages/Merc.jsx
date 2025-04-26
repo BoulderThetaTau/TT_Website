@@ -157,16 +157,16 @@ function Merc() {
               src={mercs[activeCard].image}
               alt={mercs[activeCard].name}
             />
-            <h3 className="text-xl font-bold text-center mt-4">
+            <h3 className="text-3xl font-bold text-center mt-4">
               {mercs[activeCard].name}
             </h3>
-            <p className="text-center text-thetaTauRed font-semibold">
+            <p className="text-center text-xl text-thetaTauRed font-semibold">
               {mercs[activeCard].title}
             </p>
-            <p className="text-center text-thetaTauGold font-semibold">
+            <p className="text-center text-xl text-thetaTauGold font-semibold">
               {mercs[activeCard].pledgeClass}
             </p>
-            <p className="mt-4 text-gray-700 text-sm">
+            <p className="text-xl mt-4 text-gray-700 text-sm">
               {mercs[activeCard].description}
             </p>
           </div>

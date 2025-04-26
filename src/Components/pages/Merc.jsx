@@ -141,8 +141,8 @@ function Merc() {
       {activeCard !== null && (
         <div className="fixed inset-0 pt-20 bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ease-in-out">
           <div
-            className={`bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative transform transition-all duration-300 ease-in-out ${
-              isVisible ? "scale-95 opacity-100" : "scale-90 opacity-0"
+            className={`bg-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-3xl w-full relative transform transition-all duration-300 ease-in-out ${
+              isVisible ? "scale-95 mobile:scale-100 opacity-100" : "scale-90 mobile:scale-100 opacity-0"
             } overflow-y-auto max-h-[90vh] sm:max-h-[80vh]`}
             style={{ overscrollBehavior: 'contain' }}
           >
@@ -157,13 +157,13 @@ function Merc() {
               src={mercs[activeCard].image}
               alt={mercs[activeCard].name}
             />
-            <h3 className="text-3xl font-bold text-center mt-4">
+            <h3 className="text-3xl slim:text-4xl font-bold text-center mt-4">
               {mercs[activeCard].name}
             </h3>
-            <p className="text-center text-xl text-thetaTauRed font-semibold">
+            <p className="text-center text-xl slim:text-2xl text-thetaTauRed font-semibold">
               {mercs[activeCard].title}
             </p>
-            <p className="text-center text-xl text-thetaTauGold font-semibold">
+            <p className="text-center text-xl slim:text-2xl text-thetaTauGold font-semibold">
               {mercs[activeCard].pledgeClass}
             </p>
             <p className="text-xl mt-4 text-gray-700 text-sm">

@@ -6,7 +6,7 @@ module.exports = {
       screens: {
         'mobile': '975px',
         'tablet-portrait': '750px',
-        'slim': '450px',
+        'slim': '500px',
       },
       colors: {
         thetaTauGold: '#CFB87C', // Example hex value for gold

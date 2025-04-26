@@ -7,23 +7,29 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
     <div className='hero-container'>
-        {/* if you don't want the video, comment out the video tag below */}
-      {/* <video src='/videos/video-1.mp4' autoPlay loop muted />  */}
-      <h1 style={{marginTop: '1.5rem', lineHeight: '4rem'}}
-      className='text-6xl slim:text-4xl mobile:text-center leading-loosed tracking-wide px-4 font-bold'>THETA TAU ETA GAMMA CHAPTER</h1>
-      <p className='text-3xl slim:text-xl mx-5 mobile:mx-8'>The Co-Ed Professional Engineering Fraternity at the University of Colorado - Boulder</p>
-      <div className='hero-btns'>
-        <Button className='btns'
-        buttonStyle='btn--outline'
-        buttonSize='btn--large'
-        to='/about'
+      <h1
+        style={{marginTop: '1.5rem'}}
+        className='text-5xl sm:text-4xl mobile:text-2xl xs:text-xl text-center leading-tight tracking-wide px-2 font-bold'
+      >
+        THETA TAU ETA GAMMA CHAPTER
+      </h1>
+      <p className='text-2xl sm:text-xl mobile:text-base xs:text-sm mx-2 mt-2 text-center'>
+        The Co-Ed Professional Engineering Fraternity at the University of Colorado - Boulder
+      </p>
+      <div className='hero-btns flex flex-col items-center gap-3 mt-4 w-full px-2 mb-6'>
+        <Button
+          className='btns w-full max-w-xs text-base mobile:text-sm'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          to='/about'
         >
-            ABOUT
+          ABOUT
         </Button>
-        <Button className='btns slim:mb-4'
-        buttonStyle='btn--primary'
-        buttonSize='btn--large'
-        to='https://thetatau.org'
+        <Button
+          className='btns w-full max-w-xs text-base mobile:text-sm'
+          buttonStyle='btn--primary'
+          buttonSize='btn--large'
+          to='https://thetatau.org'
         >
           NATIONALS
         </Button>

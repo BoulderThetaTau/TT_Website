@@ -8,28 +8,28 @@ function Merc() {
 
   const mercs = [
     {
-      name: "Payton Campbell",
+      name: "Liam Masias",
       title: "Regent / President",
-      pledgeClass: "Eta Gamma 382 X! TT! YY! Xi Gamma Pledge Class",
+      pledgeClass: "Eta Gamma 415 X! Omicron Gamma Pledge Class",
       image: "/images/Merc/Regent.png",
       description:
-        "Payton Campbell is a current Junior in Biomedical Engineering at the University of Colorado – Boulder, with minors in Electrical Engineering and Engineering Management. She grew up in the Southern Denver Metro area, surrounded by her parents, younger brother, and three Great Danes. She enjoys concerts, snowboarding, printmaking, and graphic design. She also has a collection of records and posters that cover most of her walls! She pursued engineering to combine her love of science, biology, and human anatomy with her love of design. Payton’s favorite parts of Theta Tau have been being able to meet new people and form some of her closest friendships, while still being able to pursue leadership and contribute to the success of the chapter.",
+        "Liam Masias is pursuing two degrees in Computer Science and Electrical & Computer Engineering, along with minors in Business and Spanish. Passionate about the interface of hardware and software, he is fascinated by the systems that drive today’s technological world. Liam grew up in the Denver Metro area before moving to Boulder in 2023 after achieving his Associate’s Degree from the Community College of Denver. He finds a strong sense of community in Theta Tau, connecting with others who are committed to persevere through the rigors of their fields. As Regent, Liam is excited to build on the success of past leadership, working alongside the Executive Council to foster collaboration, strengthen relationships with other organizations, and expand the Chapter’s reach across the broader community.",
     },
     {
-      name: "Jayce Wynn",
+      name: "Victoria Davis",
       title: "Vice Regent / Vice President",
-      pledgeClass: "Eta Gamma 441 Y! Pi Gamma Pledge Class",
+      pledgeClass: "Eta Gamma 414 Y! TT! Omicron Gamma Pledge Class",
       image: "/images/Merc/Vice.png",
       description:
-        "Jayce is currently pursuing a bachelor’s degree in biomedical engineering with a minor in electrical engineering at the University of Colorado Boulder. He is working to build a strong foundation in engineering principles, human biology, and medical applications. Upon graduation, Jayce plans to pursue a career in the medical device industry, applying engineering concepts to improve patient outcomes. Theta Tau has provided Jayce with the opportunity to surround himself with like-minded engineers, who have supported his personal and professional growth and resulted in lifelong friendships. As Vice Regent, Jayce is committed to fostering a welcoming community that emphasizes personal development and supports the success of each member.",
+        "Victoria is a sophomore majoring in Computer Science with a minor in Computer Engineering. Outside of school, she enjoys working as a learning assistant, exploring her hometown of Pittsburgh, PA, spending time outdoors, and trying new things. Her favorite part of Theta Tau is always knowing somebody in the engineering center. As Inner Guard, Victoria is excited to get to know the Sigma Gamma pledge class and help them integrate into the fraternity. She hopes to share with others the energy and brotherhood she has found in Theta Tau.",
     },
     {
-      name: "Aaron Nong",
+      name: "Madison Petrucelli",
       title: "Scribe",
-      pledgeClass: "Eta Gamma 400 V! Omicron Gamma Pledge Class",
+      pledgeClass: "Eta Gamma 458 V! Omicron Gamma Pledge Class",
       image: "/images/Merc/Scribe.png",
       description:
-        "Aaron is a sophomore majoring in Computer Science with a minor in Business. Born in California, he moved to Colorado at a young age and has lived there ever since. In his free time, he enjoys playing video games, drawing, going to the gym, and hanging out with his friends. Having been a part of the fraternity since his first year in college, he’s excited to contribute to the fraternity as Scribe.",
+        "Madison Petruccelli is a sophomore majoring in Mechanical Engineering with a minor in Economics. When she is not in the classroom she enjoys playing soccer, skiing, hiking and any other kind of outdoor adventure. She is excited to be more involved in Theta Tau this semester as scribe and enjoys how many ski bum engineers she has met since she joined.",
     },
     {
       name: "Abby Rugg",
@@ -40,36 +40,36 @@ function Merc() {
         "Abigail is a sophomore majoring in Architectural Engineering with minors in Business and Engineering Management, combining her interests in creative design, leadership, and problem-solving. Outside of academics, Abby enjoys snowboarding, line dancing, traveling, axe throwing, cooking and managing finances. She values her time in Theta Tau for the incredible people she’s met and the fun events the chapter organizes. As Treasurer, Abby is dedicated to supporting the chapter’s success and keeping things running smoothly. She’s proud to contribute to the welcoming and inspiring community that makes Theta Tau such a special part of her college experience.",
     },
     {
-      name: "Madisyn Manka",
+      name: "Jerry Vanim-Botting",
       title: "Marshal",
-      pledgeClass: "Eta Gamma 438 W! Pi Gamma Pledge Class",
+      pledgeClass: "Eta Gamma 448 W! Rho Gamma Pledge Class",
       image: "/images/Merc/Marshal.png",
       description:
-        "Madisyn is a junior civil engineering student at the University of Colorado Boulder, is passionate about skiing, pottery, cooking, dirt biking, traveling, and trying new things. She cherishes her time and the collaborative connections she’s made through Theta Tau. As the Marshal, she aims to create a welcoming and inclusive community for the chapter. ",
+        "Jerry Vanim-Botting is a junior majoring in Electrical Engineering with minors in Energy and Engineering Management, with which he hopes to build a career modernizing grid infrastructure and integrating renewable energy sources. In his free time, he enjoys live music, yoga, and skiing. Jerry, as a transfer student, was ecstatic to find the community he did within Theta Tau and believes strongly in the organization. As Marshal, Jerry hopes to inspire a renewed focus within the chapter on supporting the health and wellness of its members, be the first line of backup for all members in distress, and serve as a fair and impartial mediator for intra-fraternal conflict.",
     },
     {
-      name: "Carly Davis",
+      name: "Lola Feilke",
       title: "Corresponding Secretary",
-      pledgeClass: "Eta Gamma 425 R! Pi Gamma Pledge Class",
+      pledgeClass: "Eta Gamma 422 R! Pi Gamma Pledge Class",
       image: "/images/Merc/CorrSec.png",
       description:
-        "Carly is a sophomore at the University of Colorado, Boulder, majoring in Creative Technology and Design and minoring in Leadership. She enjoys reading, graphic design, and spending time with her family and friends. In her free time, you can usually find her doing something with music- whether listening, composing, or playing one of her seven instruments- she has fun doing it all! She went into engineering to combine her love for problem-solving with her uniquely creative and humanitarian passions. She rushed Theta Tau at the behest of one of her friends and quickly fell in love with the supportive community that encourages hard work and meaningful relationships. As Corresponding Secretary, she hopes to expand this culture by connecting alumni with current members to further professional opportunities and personal connections.",
-    },
-    {
-      name: "Victoria Davis",
-      title: "Inner Guard",
-      pledgeClass: "Eta Gamma 414 T! Omicron Gamma Pledge Class",
-      image: "/images/Merc/InnerGuard.png",
-      description:
-        "Victoria is a sophomore majoring in Computer Science with a minor in Computer Engineering. Outside of school, she enjoys working as a learning assistant, exploring her hometown of Pittsburgh, PA, spending time outdoors, and trying new things. Her favorite part of Theta Tau is always knowing somebody in the engineering center. As Inner Guard, Victoria is excited to get to know the Sigma Gamma pledge class and help them integrate into the fraternity. She hopes to share with others the energy and brotherhood she has found in Theta Tau.",
+        "Lola Feilke is currently a sophomore majoring in Aerospace Engineering with a minor in Leadership Studies through the Presidents Leadership Class at CU. In her free time, she enjoys skiing, watching Formula 1, and grabbing pizookies with her brothers after chapter. Lola values the friendships and supportive community she’s found in Theta Tau and is excited to give back as Corresponding Secretary. In her role, she looks forward to strengthening connections between alumni and current members as well as creating meaningful opportunities for engagement across the broader Theta Tau community.",
     },
     {
       name: "Julian Werder",
-      title: "Outer Guard",
-      pledgeClass: "Eta Gamma 417 U! Omicron Gamma Pledge Class",
-      image: "/images/Merc/OuterGuard.png",
+      title: "Inner Guard",
+      pledgeClass: "Eta Gamma 417 T! UU! Omicron Gamma Pledge Class",
+      image: "/images/Merc/InnerGuard.png",
       description:
         "Julian is a sophomore in Electrical and Computer Engineering with minors in Quantum Engineering and Computer Science. He enjoys skiing, F1 racing, and working on cars. As the Outer Guard, Julian is dedicated to creating a welcoming environment for the incoming Sigma Gamma pledge class. He hopes to inspire others and contribute to the lasting legacy of Theta Tau.",
+    },
+    {
+      name: "Cam Mars",
+      title: "Outer Guard",
+      pledgeClass: "Eta Gamma 444 U! Rho Gamma Pledge Class",
+      image: "/images/Merc/OuterGuard.png",
+      description:
+        "Cam is currently a sophomore pursuing a dual degree in Computer Science and pure Mathematics at the University of Colorado Boulder. He grew up in the Southern Denver Metro Area alongside a younger brother and sister, as well as two dogs and a cat. When he’s not doing math or coding, Cam loves lifting weights, skiing, mogging, anime, manga, basketball and reading. As the Outer Guard, Cam is excited to welcome the Tau Gamma pledge class to Theta Tau and to create an environment that fosters fellowship, strength and brotherhood for the future members of Theta Tau.",
     },
   ];
 

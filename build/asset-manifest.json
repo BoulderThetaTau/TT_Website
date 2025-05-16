@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0aa86787.css",
-    "main.js": "/static/js/main.de75e708.js",
+    "main.js": "/static/js/main.2c4bdf8a.js",
     "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
     "static/media/Rush_Head.JPG": "/static/media/Rush_Head.64be3964ac0ae0cf4c58.JPG",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
@@ -26,10 +26,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.0aa86787.css.map": "/static/css/main.0aa86787.css.map",
-    "main.de75e708.js.map": "/static/js/main.de75e708.js.map"
+    "main.2c4bdf8a.js.map": "/static/js/main.2c4bdf8a.js.map"
   },
   "entrypoints": [
     "static/css/main.0aa86787.css",
-    "static/js/main.de75e708.js"
+    "static/js/main.2c4bdf8a.js"
   ]
 }

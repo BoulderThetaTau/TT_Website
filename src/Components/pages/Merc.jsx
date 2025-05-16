@@ -21,7 +21,7 @@ function Merc() {
       pledgeClass: "Eta Gamma 414 Y! TT! Omicron Gamma Pledge Class",
       image: "/images/Merc/Vice.png",
       description:
-        "Victoria is a sophomore majoring in Computer Science with a minor in Computer Engineering. Outside of school, she enjoys working as a learning assistant, exploring her hometown of Pittsburgh, PA, spending time outdoors, and trying new things. Her favorite part of Theta Tau is always knowing somebody in the engineering center. As Inner Guard, Victoria is excited to get to know the Sigma Gamma pledge class and help them integrate into the fraternity. She hopes to share with others the energy and brotherhood she has found in Theta Tau.",
+        "Victoria is a sophomore majoring in Computer Science with a minor in Computer Engineering. Outside of school, she enjoys working as a learning assistant, exploring her hometown of Pittsburgh, PA, spending time outdoors, and trying new things. Her favorite part of Theta Tau is always knowing somebody in the engineering center.",
     },
     {
       name: "Madison Petrucelli",

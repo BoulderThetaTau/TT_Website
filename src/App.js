@@ -14,7 +14,7 @@ import Merc from './Components/pages/Merc';
 import Rush from './Components/pages/Rush';
 import ScrollToTop from './Components/ScrollToTop';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { app, analytics } from './Firebase'; // Import Firebase configuration
+// Firebase imports removed - unused
 
 function App() {
   return (

@@ -34,7 +34,7 @@ function About(){
                                         and women engineers.</p>
                                 </div>
                             <div className="grid-item aboutImg">
-                                <img src="images/AboutUs.png" className="shadow-xl" alt="About Us Picture" />
+                                <img src="images/AboutUs.png" className="shadow-xl" alt="" />
                             </div>
                         </div>
                 </div>
@@ -72,7 +72,7 @@ function About(){
                     </div>
                     <div className="Motto grid grid-cols-2">
                       <div className="grid-item MottoImg">
-                          <img src="images/Motto_Img.jpg" className="shadow-2xl" alt="Motto Image"/>
+                          <img src="images/Motto_Img.jpg" className="shadow-2xl" alt=""/>
                       </div>
                       <div className="grid-item grid grid-cols-1 MottoVerbage">
                         <h2 style={{color: 'rgb(139, 0, 0)'}}>Open Motto</h2>

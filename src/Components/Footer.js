@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import Particles from "react-tsparticles";
@@ -47,7 +46,7 @@ function Footer() {
       <div className='footer-links z-10'>
         <div className='footer-link-wrapper' style={{gap: '5px'}}>
           <div className='footer-link-items footer-logo'>
-            <img src='../public/images/ThetaTauLogo.png'></img>
+            <img src='../public/images/ThetaTauLogo.png' alt='Theta Tau Logo'></img>
           </div>
             <div className='footer-link-items'>
                 <h2>About Us</h2>

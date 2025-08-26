@@ -33,7 +33,7 @@ function WelcomePopup() {
         <h2 className="text-2xl font-bold text-thetaTauRed mb-4">Spring 2025 Regional Conference</h2>
         <p className="text-gray-700 mb-4">
           This weekend, we're hosting the Spring 2025 Regional Conference! 
-          You can find more information <a href="https://drive.google.com/file/d/1U42tsnTio3A_xuyYTKJ8cAPlc7YHPYTs/view?usp=sharing" className="text-thetaTauRed hover:text-thetaTauRed/80" target='_blank'>here</a>.
+          You can find more information <a href="https://drive.google.com/file/d/1U42tsnTio3A_xuyYTKJ8cAPlc7YHPYTs/view?usp=sharing" className="text-thetaTauRed hover:text-thetaTauRed/80" target='_blank' rel='noreferrer'>here</a>.
         </p>
         <div className="flex justify-end">
           <button

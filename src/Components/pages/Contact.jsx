@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import '../../App.css';
 import './pagesCSS/Contact.css';
 import Gallery from "../modules/gallery";

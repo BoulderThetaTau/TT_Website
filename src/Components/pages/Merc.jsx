@@ -104,7 +104,6 @@ function Merc() {
           <div className="Regents bg-white py-24 sm:py-32 flex justify-center items-center">
             <div className="mx-auto grid max-w-8xl gap-20 px-6 lg:px-8 xl:grid-cols-2">
               <ul
-                role="list"
                 className="grid gap-y-12 gap-x-20 sm:grid-cols-2 sm:gap-y-10 xl:col-span-2"
               >
                 {mercs.map((merc, index) => (

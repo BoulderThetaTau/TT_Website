@@ -1,10 +1,9 @@
-import React, { Children } from 'react';
+import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
-const LINKS = ['/about', '']
 
 export const Button = ({
     children, 

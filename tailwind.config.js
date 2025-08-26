@@ -9,9 +9,9 @@ module.exports = {
         'slim': '500px',
       },
       colors: {
-        thetaTauGold: '#FFB500', // Space theme vibrant golden yellow
-        thetaTauRed: '#8B0000', // Example hex value for dark red
-        spaceNavy: '#1A2B42', // Deep space navy blue
+        thetaTauGold: '#E4AD3A', // Space theme vibrant golden yellow
+        thetaTauRed: '#801517', // Example hex value for dark red
+        spaceNavy: '#13294B', // Deep space navy blue
         spaceBlue: '#4FC3F7', // Light blue/cyan for accents
       },
       keyframes: {

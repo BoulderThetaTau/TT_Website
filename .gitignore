@@ -4,3 +4,6 @@ node_modules
 /node_modules/ 
 .DS_Storenode_modules/
 .env
+/DESIGN-FILES
+CLAUDE.md
+prompt.md

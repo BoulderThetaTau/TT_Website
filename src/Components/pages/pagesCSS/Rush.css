@@ -1,94 +1,388 @@
-/* Head Piece */
-.RushHead {
-    position: relative;
-    height: 63vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgb(0,0,0,0.2);
-    object-fit: contain;
+/* Space Theme Rush Page Styles */
+
+/* Animated Star Background */
+.stars-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.RushHead::before {
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite;
+}
+
+.star-1 {
+    width: 2px;
+    height: 2px;
+}
+
+.star-2 {
+    width: 3px;
+    height: 3px;
+    animation-duration: 2s;
+}
+
+.star-3 {
+    width: 1px;
+    height: 1px;
+    animation-duration: 4s;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Orbital Paths */
+.orbital-paths {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(255, 181, 0, 0.3);
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+}
+
+.orbit-1 {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 30s;
+}
+
+.orbit-2 {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 45s;
+    animation-direction: reverse;
+}
+
+.orbit-3 {
+    width: 700px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 60s;
+}
+
+@keyframes rotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Rocket Ship Animations */
+.rocket-container {
+    animation: float 6s ease-in-out infinite;
+}
+
+.rocket-ship {
+    filter: drop-shadow(0 0 20px rgba(255, 181, 0, 0.5));
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+.rocket-flame {
+    animation: flicker 0.3s ease-in-out infinite alternate;
+    transform-origin: center top;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+    from { filter: drop-shadow(0 0 20px rgba(255, 181, 0, 0.5)); }
+    to { filter: drop-shadow(0 0 30px rgba(255, 181, 0, 0.8)); }
+}
+
+@keyframes flicker {
+    0% { transform: scaleY(1) scaleX(1); opacity: 1; }
+    50% { transform: scaleY(1.1) scaleX(0.9); opacity: 0.8; }
+    100% { transform: scaleY(0.9) scaleX(1.1); opacity: 0.9; }
+}
+
+/* Mission Stats */
+.mission-stat {
+    background: rgba(26, 43, 66, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 181, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.mission-stat:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 181, 0, 0.8);
+    box-shadow: 0 10px 30px rgba(255, 181, 0, 0.2);
+}
+
+/* Launch Button */
+.launch-button {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #FFB500, #FFC947);
+    box-shadow: 0 4px 15px rgba(255, 181, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.launch-button:hover {
+    background: linear-gradient(45deg, #FFC947, #FFD700);
+    box-shadow: 0 6px 25px rgba(255, 181, 0, 0.6);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.launch-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.launch-button:hover::before {
+    left: 100%;
+}
+
+/* Mission Stage Cards */
+.mission-stage-card {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-stage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mission-stage-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 181, 0, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.mission-stage-card:hover::before {
+    left: 100%;
+}
+
+.stage-number {
+    transition: all 0.3s ease;
+}
+
+.mission-stage-card:hover .stage-number {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 181, 0, 0.5);
+}
+
+/* Rocket Stage Icons */
+.rocket-stage-icon {
+    font-size: 4rem;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 181, 0, 0.5));
+}
+
+/* FAQ Cards */
+.faq-card {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(255, 181, 0, 0.2);
+}
+
+.faq-card::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha for tint intensity */
-    z-index: 1; /* Place overlay below text but above background */
+    background: linear-gradient(135deg, rgba(255, 181, 0, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.RushPage::after {
-    z-index: -1;
-    content:'';
-    background: url('/public/images/Rush_Head.JPG')
-    center 
-    center/cover
-    no-repeat; 
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:74vh;
+.faq-card:hover::after {
+    opacity: 1;
 }
 
-.RushHead > h1,
-.RushHead > p,
-.RushHead {
-    color: #fff;
+/* Benefit Modules */
+.benefit-module {
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
     position: relative;
-    z-index: 2;
-    text-align: center;
+    overflow: hidden;
 }
 
-.RushHead > h1 {
-    color: #fff !important;
-    font-size: 100px;
-    margin-top: -100px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.RushHead > h1::after {
+.benefit-module::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255, 181, 0, 0.2), transparent 70%);
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.benefit-module:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.benefit-module:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Cards */
+.contact-card {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 181, 0, 0.3);
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%;
-    height: 3px;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 181, 0, 0.1), transparent, rgba(255, 181, 0, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.RushBody {
-    background-color: #fff;
+.contact-card:hover::before {
+    opacity: 1;
 }
 
-.RushMessage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 5vh;
-    background-color: #fff;
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
 }
 
-.OtherPages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #fff;
+/* Section Transitions */
+.rush-section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
 }
 
-/* .RushPage {
-   
-} */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rocket-ship {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .orbit {
+        display: none;
+    }
+    
+    .mission-stat {
+        margin: 0.5rem;
+        padding: 0.8rem;
+    }
+    
+    .rocket-stage-icon {
+        font-size: 2.5rem;
+    }
+}
 
-/* Rush Over Page */
+@media (max-width: 640px) {
+    .mission-stage-card {
+        margin-bottom: 2rem;
+    }
+    
+    .benefit-module {
+        margin-bottom: 1rem;
+    }
+    
+    .stars-container .star {
+        animation-duration: 2s;
+    }
+}
 
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .rocket-container,
+    .rocket-ship,
+    .rocket-flame,
+    .orbit,
+    .star,
+    .rocket-stage-icon {
+        animation: none;
+    }
+    
+    .launch-button:hover {
+        transform: none;
+    }
+    
+    .mission-stage-card:hover,
+    .benefit-module:hover,
+    .contact-card:hover {
+        transform: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .mission-stage-card,
+    .faq-card,
+    .benefit-module,
+    .contact-card {
+        border-width: 2px;
+    }
+    
+    .star {
+        background: yellow;
+    }
+}
+
+/* Rush Over Page Styles (preserved) */
 .RushOverPage {
     position: relative;
     width: 100%;
@@ -107,7 +401,6 @@
     z-index: 0;
 }
 
-/* Keep your existing gradient overlay */
 .RushOverPage .absolute {
     z-index: 1;
 }
@@ -132,6 +425,10 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 600px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .OtherPages h2 {

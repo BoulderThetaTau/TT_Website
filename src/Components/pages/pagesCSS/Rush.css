@@ -305,10 +305,17 @@
     background: linear-gradient(45deg, rgba(255, 181, 0, 0.1), transparent, rgba(255, 181, 0, 0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .contact-card:hover::before {
     opacity: 1;
+}
+
+.contact-card > * {
+    position: relative;
+    z-index: 2;
 }
 
 /* Smooth Scroll Behavior */

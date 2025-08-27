@@ -326,7 +326,7 @@ function Rush() {
                                     <div className="text-4xl mb-4">👨‍🚀</div>
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-2">Rush Chair</h3>
                                     <p className="text-white font-semibold mb-2">Aaron Nong</p>
-                                    <a href="mailto:aaron.nong@colorado.edu" className="text-blue-400 hover:text-blue-300 transition-colors">
+                                    <a href="mailto:aaron.nong@colorado.edu" className="text-blue-400 hover:text-blue-300 transition-colors text-2xl cursor-pointer underline hover:underline">
                                         aaron.nong@colorado.edu
                                     </a>
                                 </div>
@@ -335,7 +335,7 @@ function Rush() {
                                     <div className="text-4xl mb-4">👨‍🚀</div>
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-2">Rush Chair</h3>
                                     <p className="text-white font-semibold mb-2">Riley Lanziner</p>
-                                    <a href="mailto:riley.lanziner@colorado.edu" className="text-blue-400 hover:text-blue-300 transition-colors">
+                                    <a href="mailto:riley.lanziner@colorado.edu" className="text-blue-400 hover:text-blue-300 transition-colors text-2xl cursor-pointer underline hover:underline">
                                         riley.lanziner@colorado.edu
                                     </a>
                                 </div>
@@ -345,8 +345,8 @@ function Rush() {
                             <div className="space-y-6 text-gray-300">
                                 <div>
                                     <h4 className="text-thetaTauGold font-bold mb-2">Chapter Leadership</h4>
-                                    <p>Regent: <a href="mailto:regent@etagamma.org" className="text-blue-400 hover:text-blue-300">regent@etagamma.org</a></p>
-                                    <p>Vice Regent: <a href="mailto:vice@etagamma.org" className="text-blue-400 hover:text-blue-300">vice@etagamma.org</a></p>
+                                    <p>Regent: <a href="mailto:regent@etagamma.org" className="text-blue-400 hover:text-blue-300 cursor-pointer underline hover:underline">regent@etagamma.org</a></p>
+                                    <p>Vice Regent: <a href="mailto:vice@etagamma.org" className="text-blue-400 hover:text-blue-300 cursor-pointer underline hover:underline">vice@etagamma.org</a></p>
                                 </div>
                                 
                                 <div>

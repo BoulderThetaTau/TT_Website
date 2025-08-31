@@ -25,33 +25,34 @@ function Rush() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
+        <div className="min-h-screen relative">
+            {/* Animated Star Background - Full Page */}
+            <div className="fixed inset-0 z-0 bg-gradient-to-b from-gray-900 to-black">
+                <div className="stars-container">
+                    {[...Array(100)].map((_, i) => (
+                        <div 
+                            key={i} 
+                            className={`star star-${i % 3 + 1}`}
+                            style={{
+                                left: `${Math.random() * 100}%`,
+                                top: `${Math.random() * 100}%`,
+                                animationDelay: `${Math.random() * 3}s`
+                            }}
+                        />
+                    ))}
+                </div>
+                {/* Orbital Paths */}
+                <div className="orbital-paths">
+                    <div className="orbit orbit-1"></div>
+                    <div className="orbit orbit-2"></div>
+                    <div className="orbit orbit-3"></div>
+                </div>
+            </div>
+
             {isRushOver ? <RushOver /> : (
                 <>
                     {/* Hero Section */}
                     <section id="hero" className="rush-section relative h-screen flex items-center justify-center overflow-hidden">
-                        {/* Animated Star Background */}
-                        <div className="absolute inset-0 z-0">
-                            <div className="stars-container">
-                                {[...Array(100)].map((_, i) => (
-                                    <div 
-                                        key={i} 
-                                        className={`star star-${i % 3 + 1}`}
-                                        style={{
-                                            left: `${Math.random() * 100}%`,
-                                            top: `${Math.random() * 100}%`,
-                                            animationDelay: `${Math.random() * 3}s`
-                                        }}
-                                    />
-                                ))}
-                            </div>
-                            {/* Orbital Paths */}
-                            <div className="orbital-paths">
-                                <div className="orbit orbit-1"></div>
-                                <div className="orbit orbit-2"></div>
-                                <div className="orbit orbit-3"></div>
-                            </div>
-                        </div>
 
                         {/* Hero Content */}
                         <div className="relative z-10 text-center text-white px-4">
@@ -111,7 +112,7 @@ function Rush() {
                     </section>
 
                     {/* Mission Timeline Section */}
-                    <section id="mission-timeline" className="rush-section py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+                    <section id="mission-timeline" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-5xl font-bold text-white mb-4">
@@ -208,7 +209,7 @@ function Rush() {
                     </section>
 
                     {/* FAQ Section */}
-                    <section id="faq" className="rush-section py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+                    <section id="faq" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-4xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-5xl font-bold text-white mb-4">
@@ -254,7 +255,7 @@ function Rush() {
                     </section>
 
                     {/* Benefits Section */}
-                    <section id="benefits" className="rush-section py-20 px-4 bg-gradient-to-b from-gray-800 to-black">
+                    <section id="benefits" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-5xl font-bold text-white mb-4">
@@ -306,7 +307,7 @@ function Rush() {
                     </section>
 
                     {/* Contact Section */}
-                    <section id="contact" className="rush-section py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+                    <section id="contact" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-4xl mx-auto text-center">
                             <div className="mb-16">
                                 <h2 className="text-5xl font-bold text-white mb-4">

@@ -41,18 +41,20 @@ function Rush() {
                         />
                     ))}
                 </div>
-                {/* Orbital Paths */}
-                <div className="orbital-paths">
-                    <div className="orbit orbit-1"></div>
-                    <div className="orbit orbit-2"></div>
-                    <div className="orbit orbit-3"></div>
-                </div>
             </div>
 
             {isRushOver ? <RushOver /> : (
                 <>
                     {/* Hero Section */}
                     <section id="hero" className="rush-section relative h-screen flex items-center justify-center overflow-hidden">
+                        {/* Orbital Paths - Hero Section Only */}
+                        <div className="absolute inset-0 z-5">
+                            <div className="orbital-paths">
+                                <div className="orbit orbit-1"></div>
+                                <div className="orbit orbit-2"></div>
+                                <div className="orbit orbit-3"></div>
+                            </div>
+                        </div>
 
                         {/* Hero Content */}
                         <div className="relative z-10 text-center text-white px-4">

@@ -186,6 +186,7 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
+    font-family: 'VTF Justina Light', sans-serif !important;
 }
 
 .launch-button:hover {

@@ -110,8 +110,8 @@ function Rush() {
                     <section id="mission-timeline" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
-                                <h2 className="text-5xl font-bold text-white mb-4">
-                                    <span className="text-thetaTauGold">MISSION</span> TIMELINE
+                                <h2 className="text-5xl font-bold text-white mb-4" style={{fontFamily: "'Pulsar', sans-serif !important"}}>
+                                    <span className="text-thetaTauGold" style={{fontFamily: "'Pulsar', sans-serif !important"}}>MISSION</span> <span style={{fontFamily: "'Pulsar', sans-serif !important"}}>TIMELINE</span>
                                 </h2>
                                 <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
                                     Your journey to brotherhood follows a carefully planned launch sequence. 
@@ -207,8 +207,8 @@ function Rush() {
                     <section id="faq" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-4xl mx-auto">
                             <div className="text-center mb-16">
-                                <h2 className="text-5xl font-bold text-white mb-4">
-                                    <span className="text-thetaTauGold">MISSION CONTROL</span> BRIEFING
+                                <h2 className="text-5xl font-bold text-white mb-4" style={{fontFamily: "'Pulsar', sans-serif !important"}}>
+                                    <span className="text-thetaTauGold" style={{fontFamily: "'Pulsar', sans-serif !important"}}>MISSION CONTROL</span> <span style={{fontFamily: "'Pulsar', sans-serif !important"}}>BRIEFING</span>
                                 </h2>
                                 <p className="text-2xl text-gray-300">
                                     Frequently Asked Questions About Rush
@@ -253,8 +253,8 @@ function Rush() {
                     <section id="benefits" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
-                                <h2 className="text-5xl font-bold text-white mb-4">
-                                    <span className="text-thetaTauGold">MISSION</span> OBJECTIVES
+                                <h2 className="text-5xl font-bold text-white mb-4" style={{fontFamily: "'Pulsar', sans-serif !important"}}>
+                                    <span className="text-thetaTauGold" style={{fontFamily: "'Pulsar', sans-serif !important"}}>MISSION</span> <span style={{fontFamily: "'Pulsar', sans-serif !important"}}>OBJECTIVES</span>
                                 </h2>
                                 <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
                                     Crew Advantages & Mission Benefits
@@ -305,8 +305,8 @@ function Rush() {
                     <section id="contact" className="rush-section relative z-10 py-20 px-4">
                         <div className="max-w-4xl mx-auto text-center">
                             <div className="mb-16">
-                                <h2 className="text-5xl font-bold text-white mb-4">
-                                    <span className="text-thetaTauGold">STAY IN OUR</span> ORBIT
+                                <h2 className="text-5xl font-bold text-white mb-4" style={{fontFamily: "'Pulsar', sans-serif !important"}}>
+                                    <span className="text-thetaTauGold" style={{fontFamily: "'Pulsar', sans-serif !important"}}>STAY IN OUR</span> <span style={{fontFamily: "'Pulsar', sans-serif !important"}}>ORBIT</span>
                                 </h2>
                                 <p className="text-2xl text-gray-300">
                                     Mission Control Contact

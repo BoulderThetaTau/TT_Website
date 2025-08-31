@@ -215,7 +215,7 @@ function Rush() {
                         <div className="max-w-4xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-5xl font-bold text-white mb-4">
-                                    <span className="text-thetaTauGold">MISSION</span> BRIEFING
+                                    <span className="text-thetaTauGold">MISSION CONTROL</span> BRIEFING
                                 </h2>
                                 <p className="text-2xl text-gray-300">
                                     Frequently Asked Questions About Rush
@@ -225,22 +225,22 @@ function Rush() {
                             <div className="grid md:grid-cols-2 gap-8">
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-3">🎓 Do I have to be an engineering major to rush?</h3>
-                                    <p className="text-gray-300">Yes, you must be pursuing an engineering-related degree. We welcome all engineering disciplines including mechanical, electrical, civil, computer science, aerospace, chemical, and more.</p>
+                                    <p className="text-gray-300">Yes, you must be pursuing an engineering-related degree to rush Theta Tau. We welcome all engineering disciplines including mechanical, electrical, civil, computer science, aerospace, chemical, etc.</p>
                                 </div>
 
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-3">🤝 Can I be in other clubs or organizations too?</h3>
-                                    <p className="text-gray-300">Absolutely! Theta Tau complements your other activities. You can participate in other clubs, professional societies, and even other Greek organizations (except competing engineering fraternities).</p>
+                                    <p className="text-gray-300">Absolutely! Theta Tau complements your other activities. You can participate in other clubs, professional societies, and even other Greek organizations as long as they're not competing engineering organizations (Triangle/Phi Sigma Rho)</p>
                                 </div>
 
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-3">📅 Do I need to attend every rush event?</h3>
-                                    <p className="text-gray-300">While not mandatory, attending multiple events helps you understand our culture and allows us to get to know you better. We recommend attending at least 2-3 events to make an informed decision.</p>
+                                    <p className="text-gray-300">While not mandatory, attending multiple events helps you understand our culture and allows us to get to know you better. We recommend attending at least 2-3 events to make an informed decision on our organization!</p>
                                 </div>
 
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-3">🌟 What are the benefits of joining Theta Tau?</h3>
-                                    <p className="text-gray-300">Professional development workshops, networking with alumni, leadership opportunities, social events, academic support, and lifelong friendships with fellow engineers.</p>
+                                    <p className="text-gray-300">Friendship, Professional development, networking events, and resume workshops are just a taste of the benefits of joining our fraternity!</p>
                                 </div>
 
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
@@ -250,7 +250,7 @@ function Rush() {
 
                                 <div className="faq-card bg-gray-800 p-6 rounded-lg border border-thetaTauGold hover:border-yellow-400 transition-colors">
                                     <h3 className="text-thetaTauGold font-bold text-2xl mb-3">💼 What about academic standards?</h3>
-                                    <p className="text-gray-300">We maintain high academic standards and provide study groups, tutoring, and academic support. A minimum GPA requirement ensures all members stay focused on engineering excellence.</p>
+                                    <p className="text-gray-300">We maintain high academic standards for our members. A minimum GPA requirement ensures all members stay focused on engineering excellence.</p>
                                 </div>
                             </div>
                         </div>

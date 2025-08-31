@@ -8,12 +8,35 @@
   font-style: normal;
 }
 
+/* VTF Justina Light Font Declaration for Rush Page Body Text */
+@font-face {
+  font-family: 'VTF Justina Light';
+  src: url('../../../font/VTFJustinaGEO-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VTF Justina Light';
+  src: url('../../../font/VTFJustinaGEO-LightIt.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
 /* Override fonts for Rush page headers and titles */
 .rush-section h1,
 .rush-section h2,
 .rush-section h3,
 .rush-section h4 {
   font-family: 'Pulsar', sans-serif !important;
+}
+
+/* Override fonts for Rush page body text */
+.rush-section p,
+.rush-section div:not(.stage-number):not(.rocket-stage-icon):not(.text-4xl),
+.rush-section span:not([class*="text-thetaTau"]):not([class*="text-orange"]):not([class*="text-blue"]):not([class*="text-green"]):not([class*="text-purple"]):not([class*="text-pink"]),
+.rush-section a:not(.launch-button) {
+  font-family: 'VTF Justina Light', sans-serif !important;
 }
 
 /* Animated Star Background */

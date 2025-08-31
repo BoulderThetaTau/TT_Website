@@ -138,8 +138,24 @@ function Rush() {
                                                     <div className="stage-number bg-thetaTauGold text-black w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">1</div>
                                                     <h3 className="text-2xl font-bold text-white">PRE-FLIGHT</h3>
                                                 </div>
-                                                <h4 className="text-thetaTauGold font-bold mb-3">Get to Know Us</h4>
-                                                <p className="text-gray-300">Join our mission briefings including speed dating, alumni panels, and crew social activities. This is your chance to meet current members and learn about our engineering brotherhood.</p>
+                                                <h4 className="text-thetaTauGold font-bold mb-3">Get to Know Us!</h4>
+                                                <div className="space-y-4 text-gray-300">
+                                                    <div>
+                                                        <p className="font-bold text-thetaTauGold">Mission Briefing: Crew Speed-Dating</p>
+                                                        <p className="text-sm">Monday, 9/8 at 7:30 PM | ECCR 1B40</p>
+                                                        <p>Meet your fellow astronauts, discover your crew, and get ready to chart the course for the week ahead.</p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="font-bold text-thetaTauGold">Zero-Gravity Training: Field Day</p>
+                                                        <p className="text-sm">Tuesday, 9/9 at 6:00 PM | Duane Physics Field</p>
+                                                        <p>Strengthen your team's orbit with fun, fast-paced challenges and cosmic camaraderie.</p>
+                                                    </div>
+                                                    <div>
+                                                        <p className="font-bold text-thetaTauGold">Alumni Galaxy: Panel of Commanders</p>
+                                                        <p className="text-sm">Wednesday, 9/10 at 7:00 PM | ECCR 1B40</p>
+                                                        <p>Learn from veterans who have navigated the galaxy before you—gather star-tested tips and mission wisdom.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="md:w-1/2 md:pl-8">
@@ -158,7 +174,7 @@ function Rush() {
                                                     <h3 className="text-2xl font-bold text-white">SYSTEMS CHECK</h3>
                                                 </div>
                                                 <h4 className="text-orange-400 font-bold mb-3">Interview</h4>
-                                                <p className="text-gray-300">One-on-one mission compatibility assessment with current crew members. We'll discuss your engineering goals, interests, and how you'll contribute to our brotherhood.</p>
+                                                <p className="text-gray-300">Chat with current crew members in a mission compatibility assessment! We'll discuss your engineering goals, interests, and how you'll contribute to our brotherhood during our Field Day event on Tuesday, 9/9 at 6:00 PM at the Duane Physics Field.</p>
                                             </div>
                                         </div>
                                         <div className="md:w-1/2 md:pr-8">
@@ -171,35 +187,16 @@ function Rush() {
                                     {/* Stage 3 */}
                                     <div className="flex flex-col md:flex-row items-center">
                                         <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-                                            <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-blue-500">
+                                            <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-green-500">
                                                 <div className="flex items-center mb-4">
-                                                    <div className="stage-number bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">3</div>
-                                                    <h3 className="text-2xl font-bold text-white">FINAL COUNTDOWN</h3>
+                                                    <div className="stage-number bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">3</div>
+                                                    <h3 className="text-2xl font-bold text-white">BLAST OFF</h3>
                                                 </div>
-                                                <h4 className="text-blue-400 font-bold mb-3">Preference Night</h4>
-                                                <p className="text-gray-300">Final mission prep where you confirm launch readiness and we finalize crew selection. This is when mutual interest is confirmed for the next phase.</p>
+                                                <h4 className="text-green-400 font-bold mb-3">Bid Night</h4>
+                                                <p className="text-gray-300">Final mission prep to confirm launch readiness and finalize crew selection on Friday, 9/12. This is when we will confirm your admittance to the crew and fuel you up with some yummy pancakes!</p>
                                             </div>
                                         </div>
                                         <div className="md:w-1/2 md:pl-8">
-                                            <div className="rocket-stage-icon">
-                                                ⏰
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Stage 4 */}
-                                    <div className="flex flex-col md:flex-row-reverse items-center">
-                                        <div className="md:w-1/2 md:pl-8 mb-8 md:mb-0">
-                                            <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-green-500">
-                                                <div className="flex items-center mb-4">
-                                                    <div className="stage-number bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">4</div>
-                                                    <h3 className="text-2xl font-bold text-white">BLAST OFF</h3>
-                                                </div>
-                                                <h4 className="text-green-400 font-bold mb-3">Bid Day</h4>
-                                                <p className="text-gray-300">Receive your mission assignment and begin your journey as a Potential New Member! Welcome to the Theta Tau engineering brotherhood.</p>
-                                            </div>
-                                        </div>
-                                        <div className="md:w-1/2 md:pr-8">
                                             <div className="rocket-stage-icon">
                                                 🚀
                                             </div>

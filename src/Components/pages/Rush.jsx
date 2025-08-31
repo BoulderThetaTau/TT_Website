@@ -131,7 +131,7 @@ function Rush() {
                                         <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
                                             <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-thetaTauGold">
                                                 <div className="flex items-center mb-4">
-                                                    <div className="stage-number bg-thetaTauGold text-black w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">1</div>
+                                                    <div className="stage-number bg-thetaTauGold text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">1</div>
                                                     <h3 className="text-4xl font-bold text-white">PRE-FLIGHT</h3>
                                                 </div>
                                                 <h4 className="text-thetaTauGold font-bold mb-3 text-2xl">Get to Know Us!</h4>

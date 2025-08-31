@@ -29,14 +29,18 @@
 .rush-section h3,
 .rush-section h4,
 .hero-title,
-.hero-title span {
+.hero-title span,
+.rush-section h1 span,
+.rush-section h2 span,
+.rush-section h3 span,
+.rush-section h4 span {
   font-family: 'Pulsar', sans-serif !important;
 }
 
 /* Override fonts for Rush page body text */
 .rush-section p,
 .rush-section div:not(.stage-number):not(.rocket-stage-icon):not(.text-4xl),
-.rush-section span:not([class*="text-thetaTau"]):not([class*="text-orange"]):not([class*="text-blue"]):not([class*="text-green"]):not([class*="text-purple"]):not([class*="text-pink"]),
+.rush-section span:not([class*="text-thetaTau"]):not([class*="text-orange"]):not([class*="text-blue"]):not([class*="text-green"]):not([class*="text-purple"]):not([class*="text-pink"]):not(.rush-section h1 span):not(.rush-section h2 span):not(.rush-section h3 span):not(.rush-section h4 span),
 .rush-section a:not(.launch-button) {
   font-family: 'VTF Justina Light', sans-serif !important;
 }

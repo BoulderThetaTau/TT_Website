@@ -1,5 +1,21 @@
 /* Space Theme Rush Page Styles */
 
+/* Pulsar Font Declaration for Rush Page */
+@font-face {
+  font-family: 'Pulsar';
+  src: url('../../../font/Pulsar-Original.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Override fonts for Rush page headers and titles */
+.rush-section h1,
+.rush-section h2,
+.rush-section h3,
+.rush-section h4 {
+  font-family: 'Pulsar', sans-serif !important;
+}
+
 /* Animated Star Background */
 .stars-container {
     position: absolute;

@@ -71,8 +71,8 @@ function Rush() {
                                 </svg>
                             </div>
                             
-                            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-wide">
-                                <span className="text-thetaTauGold">THETA TAU</span>
+                            <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-wide hero-title" style={{fontFamily: "'Pulsar', sans-serif"}}>
+                                <span className="text-thetaTauGold" style={{fontFamily: "'Pulsar', sans-serif"}}>THETA TAU</span>
                             </h1>
                             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-thetaTauGold">
                                 BLAST OFF TO BROTHERHOOD

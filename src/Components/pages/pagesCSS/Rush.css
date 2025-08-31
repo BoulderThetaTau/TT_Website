@@ -27,7 +27,9 @@
 .rush-section h1,
 .rush-section h2,
 .rush-section h3,
-.rush-section h4 {
+.rush-section h4,
+.hero-title,
+.hero-title span {
   font-family: 'Pulsar', sans-serif !important;
 }
 

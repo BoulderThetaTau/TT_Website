@@ -136,9 +136,9 @@ function Rush() {
                                             <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-thetaTauGold">
                                                 <div className="flex items-center mb-4">
                                                     <div className="stage-number bg-thetaTauGold text-black w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">1</div>
-                                                    <h3 className="text-2xl font-bold text-white">PRE-FLIGHT</h3>
+                                                    <h3 className="text-4xl font-bold text-white">PRE-FLIGHT</h3>
                                                 </div>
-                                                <h4 className="text-thetaTauGold font-bold mb-3 text-3xl">Get to Know Us!</h4>
+                                                <h4 className="text-thetaTauGold font-bold mb-3 text-2xl">Get to Know Us!</h4>
                                                 <div className="space-y-4 text-gray-300">
                                                     <div>
                                                         <p className="font-bold text-thetaTauGold">Mission Briefing: Crew Speed-Dating</p>
@@ -171,9 +171,9 @@ function Rush() {
                                             <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-orange-500">
                                                 <div className="flex items-center mb-4">
                                                     <div className="stage-number bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">2</div>
-                                                    <h3 className="text-2xl font-bold text-white">SYSTEMS CHECK</h3>
+                                                    <h3 className="text-4xl font-bold text-white">SYSTEMS CHECK</h3>
                                                 </div>
-                                                <h4 className="text-orange-400 font-bold mb-3 text-3xl">Interview</h4>
+                                                <h4 className="text-orange-400 font-bold mb-3 text-2xl">Interview</h4>
                                                 <p className="text-gray-300">Chat with current crew members in a mission compatibility assessment! We'll discuss your engineering goals, interests, and how you'll contribute to our brotherhood during our Field Day event on Tuesday, 9/9 at 6:00 PM at the Duane Physics Field.</p>
                                             </div>
                                         </div>
@@ -190,9 +190,9 @@ function Rush() {
                                             <div className="mission-stage-card bg-gray-800 p-8 rounded-lg border-2 border-green-500">
                                                 <div className="flex items-center mb-4">
                                                     <div className="stage-number bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-2xl mr-4">3</div>
-                                                    <h3 className="text-2xl font-bold text-white">BLAST OFF</h3>
+                                                    <h3 className="text-4xl font-bold text-white">BLAST OFF</h3>
                                                 </div>
-                                                <h4 className="text-green-400 font-bold mb-3 text-3xl">Bid Night</h4>
+                                                <h4 className="text-green-400 font-bold mb-3 text-2xl">Bid Night</h4>
                                                 <p className="text-gray-300">Final mission prep to confirm launch readiness and finalize crew selection on Friday, 9/12. This is when we will confirm your admittance to the crew and fuel you up with some yummy pancakes!</p>
                                             </div>
                                         </div>

@@ -72,7 +72,7 @@ function Footer() {
                     <Link to='mailto:central.office@thetatau.org' className='email-link'>central.office@thetatau.org</Link>
             </div>
             <div className='footer-link-items-socials'>
-                <Link to='https://store.thetatau.org/' target='_blank' className='socials-items'>Theta Tau Shop</Link>
+                <Link to='https://store.thetatau.org/' target='_blank' className='socials-items'>Nationals Shop</Link>
                 <Link to='https://thetatau25.itemorder.com/' target='_blank' className='socials-items'>Chapter Shop</Link>
                 <div className="social-icons">
                 <Link className="social-icon-link instagram"

@@ -30,18 +30,25 @@ function WelcomePopup() {
         >
           ✕
         </button>
-        <h2 className="text-2xl font-bold text-thetaTauRed mb-4">Spring 2025 Regional Conference</h2>
+        <h2 className="text-2xl font-bold text-thetaTauRed mb-4">Eta Gamma Shop is now open!</h2>
         <p className="text-gray-700 mb-4">
-          This weekend, we're hosting the Spring 2025 Regional Conference! 
-          You can find more information <a href="https://drive.google.com/file/d/1U42tsnTio3A_xuyYTKJ8cAPlc7YHPYTs/view?usp=sharing" className="text-thetaTauRed hover:text-thetaTauRed/80" target='_blank' rel='noreferrer'>here</a>.
+          The Shop is back! Back again! The Eta Gamma Chapter Shop is now open for orders until September 21st at 11:59 PM.
         </p>
         <div className="flex justify-end">
+          <button
+            onClick={() => window.open('https://thetatau25.itemorder.com/', '_blank')}
+            className="bg-thetaTauRed text-white px-4 py-2 rounded hover:bg-red-900 transition-colors"
+            style={{ marginRight: '10px' }}
+          >
+            Shop now!
+          </button>
           <button
             onClick={closePopup}
             className="bg-thetaTauRed text-white px-4 py-2 rounded hover:bg-red-900 transition-colors"
           >
-            Got it!
+            Close
           </button>
+          
         </div>
       </div>
     </div>

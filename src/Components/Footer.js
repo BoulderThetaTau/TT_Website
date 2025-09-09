@@ -73,6 +73,7 @@ function Footer() {
             </div>
             <div className='footer-link-items-socials'>
                 <Link to='https://store.thetatau.org/' target='_blank' className='socials-items'>Theta Tau Shop</Link>
+                <Link to='https://thetatau25.itemorder.com/' target='_blank' className='socials-items'>Chapter Shop</Link>
                 <div className="social-icons">
                 <Link className="social-icon-link instagram"
                 to='https://www.instagram.com/boulderthetatau?igsh=eGpweWNub3dpc2I0'

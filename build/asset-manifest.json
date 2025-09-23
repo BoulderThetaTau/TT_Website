@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.19091c68.css",
-    "main.js": "/static/js/main.e6571940.js",
+    "main.js": "/static/js/main.63a8bd08.js",
     "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/jacqueminot.png": "/static/media/jacqueminot.129a8b9085b8c0b82053.png",
@@ -28,10 +28,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.19091c68.css.map": "/static/css/main.19091c68.css.map",
-    "main.e6571940.js.map": "/static/js/main.e6571940.js.map"
+    "main.63a8bd08.js.map": "/static/js/main.63a8bd08.js.map"
   },
   "entrypoints": [
     "static/css/main.19091c68.css",
-    "static/js/main.e6571940.js"
+    "static/js/main.63a8bd08.js"
   ]
 }

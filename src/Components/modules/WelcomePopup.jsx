@@ -32,7 +32,7 @@ function WelcomePopup() {
         </button>
         <h2 className="text-2xl font-bold text-thetaTauRed mb-4">Eta Gamma Shop is now open!</h2>
         <p className="text-gray-700 mb-4">
-          The Shop is back! Back again! The Eta Gamma Chapter Shop is now open for orders until September 21st at 11:59 PM.
+          The Chapter Shop is back for a short time! The Eta Gamma Chapter Shop is now open for orders until September 30th at 11:59 PM.
         </p>
         <div className="flex justify-end">
           <button

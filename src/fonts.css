@@ -1,0 +1,32 @@
+/* Avenir Next Font Face Declarations */
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./font/Avenir Next.ttc') format('truetype-collection');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./font/Avenir Next.ttc') format('truetype-collection');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./font/Avenir Next.ttc') format('truetype-collection');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./font/Avenir Next.ttc') format('truetype-collection');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

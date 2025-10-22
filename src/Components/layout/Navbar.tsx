@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useToggle } from '../../hooks/useToggle';
 import { NAV_ITEMS } from '../../constants/navigation';
@@ -11,23 +11,12 @@ import { NAV_ITEMS } from '../../constants/navigation';
  */
 export const Navbar: React.FC = () => {
   const [isMenuOpen, toggleMenu, , closeMenu] = useToggle(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
   // Close menu on route change
   useEffect(() => {
     closeMenu();
   }, [location, closeMenu]);
-
-  // Handle scroll for navbar styling
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -49,20 +38,14 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-        }`}
-      >
+      {/* Floating Navbar - Always visible, follows scroll */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-end items-center h-16">
             {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
-              className={`p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-colors ${
-                isScrolled ? 'text-thetaTauRed hover:text-thetaTauGold' : 'text-white hover:text-thetaTauGold'
-              }`}
+              className="flex items-center p-2 rounded-md text-thetaTauRed hover:text-thetaTauGold focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-colors"
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
             >

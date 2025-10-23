@@ -38,39 +38,32 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      {/* Floating Navbar - Always visible, follows scroll */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-end items-center h-16">
-            {/* Hamburger Menu Button */}
-            <button
-              onClick={toggleMenu}
-              className="flex items-center p-2 rounded-md text-thetaTauRed hover:text-thetaTauGold focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-colors"
-              aria-label="Toggle menu"
-              aria-expanded={isMenuOpen}
-            >
-              <div className="w-6 h-6 flex flex-col justify-center items-center space-y-1.5">
-                <span
-                  className={`block h-0.5 w-6 bg-current transform transition-all duration-300 ${
-                    isMenuOpen ? 'rotate-45 translate-y-2' : ''
-                  }`}
-                />
-                <span
-                  className={`block h-0.5 w-6 bg-current transition-all duration-300 ${
-                    isMenuOpen ? 'opacity-0' : 'opacity-100'
-                  }`}
-                />
-                <span
-                  className={`block h-0.5 w-6 bg-current transform transition-all duration-300 ${
-                    isMenuOpen ? '-rotate-45 -translate-y-2' : ''
-                  }`}
-                />
-              </div>
-              <span className="ml-2 text-sm font-medium">MENU</span>
-            </button>
-          </div>
+      {/* Floating Hamburger Menu Button */}
+      <button
+        onClick={toggleMenu}
+        className="fixed top-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-md bg-white bg-opacity-90 hover:bg-opacity-100 text-thetaTauRed hover:text-thetaTauGold shadow-lg focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-all"
+        aria-label="Toggle menu"
+        aria-expanded={isMenuOpen}
+      >
+        <div className="w-6 h-6 flex flex-col justify-center items-center space-y-1.5">
+          <span
+            className={`block h-0.5 w-6 bg-current transform transition-all duration-300 ${
+              isMenuOpen ? 'rotate-45 translate-y-2' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-current transition-all duration-300 ${
+              isMenuOpen ? 'opacity-0' : 'opacity-100'
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-current transform transition-all duration-300 ${
+              isMenuOpen ? '-rotate-45 -translate-y-2' : ''
+            }`}
+          />
         </div>
-      </nav>
+        <span className="text-sm font-medium">MENU</span>
+      </button>
 
       {/* Overlay */}
       {isMenuOpen && (

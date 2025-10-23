@@ -27,7 +27,7 @@ export const CHAPTER_STATS: ChapterStat[] = [
   },
   {
     id: 'gpa',
-    value: '3.2+',
+    value: '3.5+',
     label: 'average gpa',
     description: 'Chapter average GPA demonstrating academic excellence',
   },

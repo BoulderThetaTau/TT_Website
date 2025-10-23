@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './Components/layout/Navbar';
 import { ScrollToTop } from './Components/layout/ScrollToTop';
 import { Home } from './Pages/Home';
+import { About } from './Pages/About';
 
 // Import Tailwind output
 import './output.css';
@@ -10,7 +11,6 @@ import './fonts.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Old page imports - will be replaced with TypeScript versions
-import About from './Components/pages/About';
 import Contact from './Components/pages/Contact';
 import SignUp from './Components/pages/SignUp';
 import Footer from './Components/Footer';

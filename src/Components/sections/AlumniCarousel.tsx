@@ -12,6 +12,8 @@ import { useIsMobile } from '../../hooks/useMediaQuery';
 export const AlumniCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
   const isMobile = useIsMobile();
 
   const cardsToShow = isMobile ? 1 : 3;
@@ -34,6 +36,39 @@ export const AlumniCarousel: React.FC = () => {
     setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
+  // Touch handlers for swipe gestures (Netflix-style)
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const touch = e.targetTouches[0];
+    if (!touch) return;
+    setTouchStart(touch.clientX);
+    setIsPaused(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const touch = e.targetTouches[0];
+    if (!touch) return;
+    setTouchEnd(touch.clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const minSwipeDistance = 50; // Minimum distance for a swipe
+
+    if (distance > minSwipeDistance) {
+      // Swiped left - go to next
+      goToNext();
+    } else if (distance < -minSwipeDistance) {
+      // Swiped right - go to previous
+      goToPrev();
+    }
+
+    setTouchStart(0);
+    setTouchEnd(0);
+    setIsPaused(false);
+  };
+
   // Auto-rotate effect
   useEffect(() => {
     if (isPaused) return;
@@ -55,21 +90,26 @@ export const AlumniCarousel: React.FC = () => {
 
         {/* Carousel Container */}
         <div
-          className="relative"
+          className="relative px-4 md:px-0"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Alumni Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {/* Alumni Cards Grid - Swipeable on mobile */}
+          <div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 touch-pan-y"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             {getVisibleAlumni().map((alumni) => (
               <AlumniCard key={alumni.id} alumni={alumni} />
             ))}
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Hidden on mobile, visible on desktop */}
           <button
             onClick={goToPrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
+            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 lg:-translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
             aria-label="Previous slide"
           >
             <svg
@@ -89,7 +129,7 @@ export const AlumniCarousel: React.FC = () => {
 
           <button
             onClick={goToNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
+            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 lg:translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
             aria-label="Next slide"
           >
             <svg

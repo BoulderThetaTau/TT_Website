@@ -88,21 +88,21 @@ export const AboutUsSection: React.FC = () => {
   return (
     <section className="relative w-full bg-thetaTauRed py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
-        <h2 className="text-thetaTauGold font-primary font-bold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">
-          ABOUT US
-        </h2>
-
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Column: Description Text */}
-          <div className="text-white space-y-4">
-            <p className="text-base md:text-lg leading-relaxed">
-              {COMPANY_INFO.description.long}
-            </p>
-            <p className="text-base md:text-lg leading-relaxed font-medium">
-              {COMPANY_INFO.description.mission}
-            </p>
+          {/* Left Column: Title and Description Text */}
+          <div>
+            <h2 className="text-thetaTauGold font-primary font-bold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">
+              ABOUT US
+            </h2>
+            <div className="text-white space-y-4">
+              <p className="text-base md:text-lg leading-relaxed">
+                {COMPANY_INFO.description.long}
+              </p>
+              <p className="text-base md:text-lg leading-relaxed font-medium">
+                {COMPANY_INFO.description.mission}
+              </p>
+            </div>
           </div>
 
           {/* Right Column: Gear Logo (Hidden on mobile) */}

@@ -94,7 +94,7 @@ export const AboutUsSection: React.FC = () => {
         </h2>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description Text */}
           <div className="text-white space-y-4">
             <p className="text-base md:text-lg leading-relaxed">
@@ -106,9 +106,9 @@ export const AboutUsSection: React.FC = () => {
           </div>
 
           {/* Right Column: Gear Logo (Hidden on mobile) */}
-          <div className="hidden lg:flex justify-center items-start">
+          <div className="hidden lg:flex justify-center items-center">
             <img
-              src="/images/TT-Gear-RGW.svg"
+              src="/images/TT-Gear-RGW-Test.svg"
               alt="Theta Tau Gear Logo"
               className="w-96 h-96 object-contain"
             />

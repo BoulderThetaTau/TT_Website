@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
         { label: 'About Us', path: '/about' },
         { label: 'Our Pillars', path: '/about#pillars' },
         { label: 'Rush', path: '/rush' },
-        { label: 'Mercury Council', path: '/merc' },
+        { label: 'Members', path: '/members' },
       ],
     },
     {

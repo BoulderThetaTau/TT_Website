@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
 
   // Filter navigation items to only show specific pages
   const mainNavItems = NAV_ITEMS.filter(item =>
-    ['Home', 'About Us', 'Mercury Council', 'Rush', 'Contact'].includes(item.label)
+    ['Home', 'About Us', 'Members', 'Rush', 'Contact'].includes(item.label)
   );
 
   return (

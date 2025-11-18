@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { FEATURED_ALUMNI, AlumniProfile } from '../../data/alumni';
-import { useIsMobile } from '../../hooks/useMediaQuery';
+import { useIsMobile, usePrefersReducedMotion } from '../../hooks/useMediaQuery';
 
 /**
  * Alumni Carousel Component
@@ -15,6 +15,7 @@ export const AlumniCarousel: React.FC = () => {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const isMobile = useIsMobile();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const cardsToShow = isMobile ? 1 : 3;
   const totalSlides = Math.ceil(FEATURED_ALUMNI.length / cardsToShow);
@@ -69,16 +70,16 @@ export const AlumniCarousel: React.FC = () => {
     setIsPaused(false);
   };
 
-  // Auto-rotate effect
+  // Auto-rotate effect (disabled if user prefers reduced motion)
   useEffect(() => {
-    if (isPaused) return;
+    if (isPaused || prefersReducedMotion) return;
 
     const interval = setInterval(() => {
       goToNext();
     }, 10000); // 10 seconds
 
     return () => clearInterval(interval);
-  }, [goToNext, isPaused]);
+  }, [goToNext, isPaused, prefersReducedMotion]);
 
   return (
     <section className="relative w-full bg-thetaTauGold py-16 md:py-24">
@@ -90,9 +91,11 @@ export const AlumniCarousel: React.FC = () => {
 
         {/* Carousel Container */}
         <div
-          className="relative px-4 md:px-0"
+          className="relative px-6 md:px-0"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
+          onFocus={() => setIsPaused(true)}
+          onBlur={() => setIsPaused(false)}
         >
           {/* Alumni Cards Grid - Swipeable on mobile */}
           <div
@@ -109,11 +112,11 @@ export const AlumniCarousel: React.FC = () => {
           {/* Navigation Arrows - Hidden on mobile, visible on desktop */}
           <button
             onClick={goToPrev}
-            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 lg:-translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
+            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 lg:-translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-4 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
             aria-label="Previous slide"
           >
             <svg
-              className="w-6 h-6"
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -129,11 +132,11 @@ export const AlumniCarousel: React.FC = () => {
 
           <button
             onClick={goToNext}
-            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 lg:translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
+            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 lg:translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-4 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed"
             aria-label="Next slide"
           >
             <svg
-              className="w-6 h-6"
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -149,18 +152,25 @@ export const AlumniCarousel: React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-8 space-x-3">
           {Array.from({ length: totalSlides }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all focus:outline-none ${
+              className={`min-w-[44px] min-h-[44px] rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauRed focus:ring-offset-2 focus:ring-offset-thetaTauGold flex items-center justify-center ${
                 index === currentIndex
-                  ? 'bg-thetaTauRed w-8'
+                  ? 'bg-thetaTauRed'
                   : 'bg-white bg-opacity-50 hover:bg-opacity-100'
               }`}
               aria-label={`Go to slide ${index + 1}`}
-            />
+              aria-current={index === currentIndex ? 'true' : 'false'}
+            >
+              <span className={`block rounded-full transition-all ${
+                index === currentIndex
+                  ? 'w-4 h-4 bg-white'
+                  : 'w-3 h-3 bg-thetaTauRed'
+              }`} />
+            </button>
           ))}
         </div>
       </div>
@@ -195,20 +205,20 @@ const AlumniCard: React.FC<AlumniCardProps> = ({ alumni }) => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="font-primary font-bold text-thetaTauRed text-xl md:text-2xl mb-2">
+        <h3 className="font-primary font-bold text-thetaTauRed text-xl md:text-2xl mb-3">
           {alumni.name}
         </h3>
 
-        <p className="text-gray-700 text-sm md:text-base mb-1">
+        <p className="text-gray-700 text-sm md:text-base mb-2 leading-relaxed">
           Class of {alumni.graduationYear}
         </p>
 
-        <p className="text-gray-800 font-medium text-sm md:text-base mb-4">
+        <p className="text-gray-800 font-medium text-sm md:text-base mb-6 leading-relaxed">
           {alumni.currentJob}
           {alumni.company && ` at ${alumni.company}`}
         </p>
 
-        <blockquote className="text-gray-600 text-sm md:text-base italic border-l-4 border-thetaTauGold pl-4">
+        <blockquote className="text-gray-600 text-sm md:text-base italic border-l-4 border-thetaTauGold pl-4 leading-relaxed">
           "{alumni.quote}"
         </blockquote>
       </div>

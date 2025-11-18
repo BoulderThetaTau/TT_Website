@@ -45,3 +45,9 @@ export const useIsMobile = (): boolean => useMediaQuery('(max-width: 767px)');
 export const useIsTablet = (): boolean => useMediaQuery('(min-width: 768px) and (max-width: 1023px)');
 export const useIsDesktop = (): boolean => useMediaQuery('(min-width: 1024px)');
 export const useIsLargeDesktop = (): boolean => useMediaQuery('(min-width: 1280px)');
+
+/**
+ * Accessibility hook for reduced motion preference
+ * Returns true if user prefers reduced motion
+ */
+export const usePrefersReducedMotion = (): boolean => useMediaQuery('(prefers-reduced-motion: reduce)');

@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
       {/* Floating Hamburger Menu Button */}
       <button
         onClick={toggleMenu}
-        className="fixed top-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-md bg-white bg-opacity-90 hover:bg-opacity-100 text-thetaTauRed hover:text-thetaTauGold shadow-lg focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-all"
+        className="fixed top-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-md bg-white bg-opacity-90 hover:bg-opacity-100 text-thetaTauRed hover:text-thetaTauGold shadow-lg focus:outline-none focus:ring-2 focus:ring-thetaTauGold transition-all"
         aria-label="Toggle menu"
         aria-expanded={isMenuOpen}
       >
@@ -107,12 +107,12 @@ export const Navbar: React.FC = () => {
 
           {/* Navigation Links */}
           <nav className="flex-1 px-6 py-8">
-            <ul className="space-y-6">
+            <ul className="space-y-4">
               {mainNavItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`block text-white text-2xl font-bold hover:text-thetaTauGold transition-colors duration-200 py-2 ${
+                    className={`block text-white text-2xl font-bold hover:text-thetaTauGold transition-colors duration-200 py-3 ${
                       location.pathname === item.path ? 'text-thetaTauGold' : ''
                     }`}
                   >

@@ -21,12 +21,12 @@ export const CommunityStatsSection: React.FC = () => {
           {CHAPTER_STATS.map((stat) => (
             <div key={stat.id} className="text-center">
               {/* Stat Value */}
-              <div className="text-white font-primary font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2 md:mb-4">
+              <div className="text-white font-primary font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 md:mb-6 leading-tight">
                 {formatStatValue(stat.value)}
               </div>
 
               {/* Stat Label */}
-              <div className="text-white font-primary text-sm sm:text-base md:text-lg lg:text-xl">
+              <div className="text-white font-primary text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
                 {stat.label}
               </div>
             </div>

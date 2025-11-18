@@ -27,7 +27,7 @@ export const OurHistorySection: React.FC = () => {
             <h2 className="font-primary font-bold text-4xl md:text-5xl lg:text-6xl mb-6 lg:mb-8">
               Our History
             </h2>
-            <div className="space-y-4 text-base md:text-lg leading-relaxed">
+            <div className="space-y-6 text-base md:text-lg leading-relaxed">
               <p>
                 The Eta Gamma chapter of Theta Tau was founded at the University of Colorado Boulder, bringing together passionate engineering students who shared a vision of brotherhood and professional excellence.
               </p>

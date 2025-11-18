@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { COMPANY_INFO } from '../../constants/company';
-import { useIsMobile } from '../../hooks/useMediaQuery';
+import { useIsMobile, usePrefersReducedMotion } from '../../hooks/useMediaQuery';
 
 /**
  * About Us Section Component
@@ -15,6 +15,7 @@ export const AboutUsSection: React.FC = () => {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const isMobile = useIsMobile();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   // Sample photo data - replace with actual photos later
   const photos = [
@@ -74,16 +75,16 @@ export const AboutUsSection: React.FC = () => {
     setIsPaused(false);
   };
 
-  // Auto-rotate effect
+  // Auto-rotate effect (disabled if user prefers reduced motion)
   useEffect(() => {
-    if (isPaused) return;
+    if (isPaused || prefersReducedMotion) return;
 
     const interval = setInterval(() => {
       goToNext();
     }, 10000); // 10 seconds
 
     return () => clearInterval(interval);
-  }, [goToNext, isPaused]);
+  }, [goToNext, isPaused, prefersReducedMotion]);
 
   return (
     <section className="relative w-full bg-thetaTauRed py-16 md:py-24">
@@ -95,7 +96,7 @@ export const AboutUsSection: React.FC = () => {
             <h2 className="text-thetaTauGold font-primary font-bold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">
               ABOUT US
             </h2>
-            <div className="text-white space-y-4">
+            <div className="text-white space-y-6">
               <p className="text-base md:text-lg leading-relaxed">
                 {COMPANY_INFO.description.long}
               </p>
@@ -117,9 +118,11 @@ export const AboutUsSection: React.FC = () => {
 
         {/* Photo Carousel */}
         <div
-          className="relative mt-12 lg:mt-16 px-4 md:px-0"
+          className="relative mt-12 lg:mt-16 px-6 md:px-0"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
+          onFocus={() => setIsPaused(true)}
+          onBlur={() => setIsPaused(false)}
         >
           {/* Photos Grid - Swipeable on mobile */}
           <div
@@ -144,11 +147,11 @@ export const AboutUsSection: React.FC = () => {
           {/* Navigation Arrows - Hidden on mobile */}
           <button
             onClick={goToPrev}
-            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 lg:-translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauGold"
+            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 lg:-translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-4 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauGold"
             aria-label="Previous photo"
           >
             <svg
-              className="w-6 h-6"
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -164,11 +167,11 @@ export const AboutUsSection: React.FC = () => {
 
           <button
             onClick={goToNext}
-            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 lg:translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-3 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauGold"
+            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 lg:translate-x-24 bg-white bg-opacity-80 hover:bg-opacity-100 text-thetaTauRed p-4 rounded-full shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauGold"
             aria-label="Next photo"
           >
             <svg
-              className="w-6 h-6"
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -184,18 +187,25 @@ export const AboutUsSection: React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-8 space-x-3">
           {Array.from({ length: totalSlides }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all focus:outline-none ${
+              className={`min-w-[44px] min-h-[44px] rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-thetaTauGold focus:ring-offset-2 focus:ring-offset-thetaTauRed flex items-center justify-center ${
                 index === currentIndex
-                  ? 'bg-thetaTauGold w-8'
+                  ? 'bg-thetaTauGold'
                   : 'bg-white bg-opacity-50 hover:bg-opacity-100'
               }`}
               aria-label={`Go to photo ${index + 1}`}
-            />
+              aria-current={index === currentIndex ? 'true' : 'false'}
+            >
+              <span className={`block rounded-full transition-all ${
+                index === currentIndex
+                  ? 'w-4 h-4 bg-thetaTauRed'
+                  : 'w-3 h-3 bg-white'
+              }`} />
+            </button>
           ))}
         </div>
       </div>

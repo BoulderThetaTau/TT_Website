@@ -16,7 +16,7 @@ export const OurPurposeSection: React.FC = () => {
             <h2 className="font-primary font-bold text-4xl md:text-5xl lg:text-6xl mb-6 lg:mb-8">
               Our Purpose
             </h2>
-            <div className="space-y-4 text-base md:text-lg leading-relaxed">
+            <div className="space-y-6 text-base md:text-lg leading-relaxed">
               <p>
                 Founded on the principles of Brotherhood, Professionalism, and Service, Theta Tau is a co-ed professional engineering fraternity with a mission to develop and maintain a high standard of professional interest among its members.
               </p>

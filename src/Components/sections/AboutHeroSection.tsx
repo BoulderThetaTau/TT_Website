@@ -21,7 +21,7 @@ export const AboutHeroSection: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 sm:px-8 max-w-4xl mx-auto">
         <h1 className="font-primary font-bold text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none mb-6">
           ABOUT US
         </h1>

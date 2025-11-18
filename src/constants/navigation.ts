@@ -21,7 +21,8 @@ export const ROUTES = {
   CONTACT: '/contact',
   COMM_SERVE: '/comm-serve',
   PROF_DEV: '/prof-dev',
-  MERC: '/merc',
+  MEMBERS: '/members',
+  MERC: '/merc', // Legacy route - redirects to /members
   RUSH: '/rush',
   SIGN_UP: '/sign-up',
 } as const;
@@ -59,9 +60,9 @@ export const NAV_ITEMS: NavRoute[] = [
     showInNav: true,
   },
   {
-    path: ROUTES.MERC,
-    label: 'Mercury Council',
-    description: 'Meet our executive board',
+    path: ROUTES.MEMBERS,
+    label: 'Members',
+    description: 'Meet our chapter members',
     showInNav: true,
   },
   {
@@ -83,7 +84,7 @@ export const FOOTER_NAV = {
   quickLinks: [
     { path: ROUTES.ABOUT, label: 'About Us' },
     { path: ROUTES.RUSH, label: 'Rush' },
-    { path: ROUTES.MERC, label: 'Mercury Council' },
+    { path: ROUTES.MEMBERS, label: 'Members' },
     { path: ROUTES.CONTACT, label: 'Contact' },
   ],
   involvement: [
@@ -112,11 +113,11 @@ export const HOME_CARDS = [
     labelColor: 'red',
   },
   {
-    id: 'merc',
-    title: 'Mercury Council',
-    description: 'Meet our executive board members',
-    path: ROUTES.MERC,
-    image: '/images/Merc.png',
+    id: 'members',
+    title: 'Members',
+    description: 'Meet our chapter members',
+    path: ROUTES.MEMBERS,
+    image: '/images/Merc.png', // Can update image later
     labelColor: 'gold',
   },
   {

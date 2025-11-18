@@ -5,6 +5,7 @@ import { ScrollToTop } from './Components/layout/ScrollToTop';
 import { Footer } from './Components/layout/Footer';
 import { Home } from './Pages/Home';
 import { About } from './Pages/About';
+import { Members } from './Pages/Members';
 
 // Import Tailwind output
 import './output.css';
@@ -17,7 +18,6 @@ import SignUp from './Components/pages/SignUp';
 import Brotherhood from './Components/pages/Brotherhood';
 import CommServ from './Components/pages/CommServe';
 import ProfDef from './Components/pages/ProfDef';
-import Merc from './Components/pages/Merc';
 import Rush from './Components/pages/Rush';
 
 /**
@@ -34,13 +34,15 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/members" element={<Members />} />
         <Route path="/brotherhood" element={<Brotherhood />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/comm-serve" element={<CommServ />} />
         <Route path="/prof-dev" element={<ProfDef />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/merc" element={<Merc />} />
         <Route path="/rush" element={<Rush />} />
+        {/* Legacy route - redirect /merc to /members */}
+        <Route path="/merc" element={<Members />} />
       </Routes>
       <Footer />
     </Router>

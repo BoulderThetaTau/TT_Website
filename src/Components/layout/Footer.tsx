@@ -52,7 +52,6 @@ export const Footer: React.FC = () => {
         { label: 'Brotherhood', path: '/brotherhood' },
         { label: 'Community Service', path: '/comm-serve' },
         { label: 'Professional Development', path: '/prof-dev' },
-        { label: 'Sign Up', path: '/sign-up' },
       ],
     },
     {

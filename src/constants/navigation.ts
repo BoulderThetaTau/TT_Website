@@ -24,7 +24,6 @@ export const ROUTES = {
   MEMBERS: '/members',
   MERC: '/merc', // Legacy route - redirects to /members
   RUSH: '/rush',
-  SIGN_UP: '/sign-up',
 } as const;
 
 // Navigation items for header/navbar

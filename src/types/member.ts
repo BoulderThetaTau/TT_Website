@@ -47,6 +47,7 @@ export interface Member {
   email?: string;
   headshot?: string; // Path to headshot image (2:3 ratio)
   isLeadership?: boolean; // Whether to show in leadership section
+  roleNumber?: string; // Member's role/badge number (e.g., "460", "ΗΓ 460")
 }
 
 export interface MemberSection {

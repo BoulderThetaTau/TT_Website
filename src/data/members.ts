@@ -29,6 +29,7 @@ export const MEMBERS: Member[] = [
     email: 'regent@etagamma.org',
     headshot: '/images/members/placeholder-male.jpg',
     isLeadership: true,
+    roleNumber: '450',
   },
   {
     id: 'vice-regent-2024',
@@ -46,6 +47,7 @@ export const MEMBERS: Member[] = [
     email: 'vice@etagamma.org',
     headshot: '/images/members/placeholder-female.jpg',
     isLeadership: true,
+    roleNumber: '455',
   },
   {
     id: 'scribe-2024',
@@ -61,6 +63,7 @@ export const MEMBERS: Member[] = [
     interests: ['Web Development', 'Gaming', 'Running'],
     headshot: '/images/members/placeholder-male.jpg',
     isLeadership: true,
+    roleNumber: '460',
   },
 
   // ==========================================
@@ -72,12 +75,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Chen',
     pledgeClass: 'Tau Gamma',
     major: 'Aerospace Engineering',
-    year: 'Sophomore',
     graduationYear: 2027,
     hometown: 'Fort Collins, CO',
     bio: 'Excited to be part of Theta Tau! I\'m interested in propulsion systems and spacecraft design.',
     interests: ['Model Rocketry', 'Basketball', 'Guitar'],
     headshot: '/images/members/placeholder-male.jpg',
+    roleNumber: '461',
   },
   {
     id: 'tau-gamma-2',
@@ -85,12 +88,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Williams',
     pledgeClass: 'Tau Gamma',
     major: 'Chemical Engineering',
-    year: 'Sophomore',
     graduationYear: 2027,
     hometown: 'Aurora, CO',
     bio: 'Passionate about sustainable energy and green chemistry.',
     interests: ['Sustainability', 'Yoga', 'Cooking'],
     headshot: '/images/members/placeholder-female.jpg',
+    roleNumber: '462',
   },
 
   // ==========================================
@@ -102,12 +105,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Martinez',
     pledgeClass: 'Sigma Gamma',
     major: 'Civil Engineering',
-    year: 'Junior',
     graduationYear: 2026,
     hometown: 'Pueblo, CO',
     bio: 'Interested in structural design and urban planning.',
     interests: ['Architecture', 'Soccer', 'Travel'],
     headshot: '/images/members/placeholder-male.jpg',
+    roleNumber: '456',
   },
   {
     id: 'sigma-gamma-2',
@@ -115,12 +118,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Davis',
     pledgeClass: 'Sigma Gamma',
     major: 'Biomedical Engineering',
-    year: 'Junior',
     graduationYear: 2026,
     hometown: 'Littleton, CO',
     bio: 'Focused on medical device design and improving healthcare technology.',
     interests: ['Biotech', 'Skiing', 'Piano'],
     headshot: '/images/members/placeholder-female.jpg',
+    roleNumber: '457',
   },
 
   // ==========================================
@@ -132,12 +135,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Brown',
     pledgeClass: 'Rho Gamma',
     major: 'Environmental Engineering',
-    year: 'Senior',
     graduationYear: 2025,
     hometown: 'Loveland, CO',
     bio: 'Working on water resource management and environmental sustainability projects.',
     interests: ['Environmental Policy', 'Mountain Biking', 'Photography'],
     headshot: '/images/members/placeholder-male.jpg',
+    roleNumber: '451',
   },
 
   // ==========================================
@@ -149,12 +152,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Taylor',
     pledgeClass: 'Pi Gamma',
     major: 'Engineering Physics',
-    year: 'Senior',
     graduationYear: 2025,
     hometown: 'Grand Junction, CO',
     bio: 'Researching quantum computing and advanced materials.',
     interests: ['Physics', 'Climbing', 'Reading'],
     headshot: '/images/members/placeholder-female.jpg',
+    roleNumber: '445',
   },
 
   // ==========================================
@@ -166,12 +169,12 @@ export const MEMBERS: Member[] = [
     lastName: 'Wilson',
     pledgeClass: 'Omicron Gamma',
     major: 'Mechanical Engineering',
-    year: 'Graduated',
     graduationYear: 2024,
     hometown: 'Boulder, CO',
     bio: 'Alumni member now working in the aerospace industry.',
     interests: ['Engineering Design', 'Mentorship', 'Golf'],
     headshot: '/images/members/placeholder-male.jpg',
+    roleNumber: '440',
   },
 ];
 

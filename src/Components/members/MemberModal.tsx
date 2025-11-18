@@ -141,8 +141,11 @@ export const MemberModal: React.FC<MemberModalProps> = ({ member, isOpen, onClos
                 {member.major && (
                   <InfoItem icon="fas fa-graduation-cap" label="Major" value={member.major} />
                 )}
-                {member.year && (
-                  <InfoItem icon="fas fa-calendar" label="Year" value={member.year} />
+                {member.hometown && (
+                  <InfoItem icon="fas fa-map-marker-alt" label="Hometown" value={member.hometown} />
+                )}
+                {member.roleNumber && (
+                  <InfoItem icon="fas fa-id-badge" label="Role Number" value={member.roleNumber} />
                 )}
                 {member.graduationYear && (
                   <InfoItem
@@ -150,9 +153,6 @@ export const MemberModal: React.FC<MemberModalProps> = ({ member, isOpen, onClos
                     label="Graduation"
                     value={member.graduationYear.toString()}
                   />
-                )}
-                {member.hometown && (
-                  <InfoItem icon="fas fa-map-marker-alt" label="Hometown" value={member.hometown} />
                 )}
               </div>
 
@@ -166,6 +166,19 @@ export const MemberModal: React.FC<MemberModalProps> = ({ member, isOpen, onClos
                   <p className="text-gray-700 text-base leading-relaxed">
                     {member.bio}
                   </p>
+
+                  {/* Member Signature */}
+                  {member.roleNumber && (
+                    <div className="mt-6 pt-4 border-t border-gray-200">
+                      <p className="text-gray-600 italic text-base leading-relaxed font-serif">
+                        In H&T,
+                        <br />
+                        {member.firstName} {member.lastName}
+                        <br />
+                        ΗΓ {member.roleNumber}
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
 

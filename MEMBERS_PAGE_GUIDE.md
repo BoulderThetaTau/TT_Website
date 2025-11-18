@@ -36,6 +36,9 @@ Clicking a member card opens a full-screen modal with:
   - Major, year, graduation year
   - Hometown
   - Bio/description
+  - Member signature (appears at end of bio if roleNumber is provided)
+    - Format: "In H&T, [Full Name] ΗΓ [Role Number]"
+    - Example: "In H&T, Sophanara Thann ΗΓ 460"
   - Interests (as tags)
 
 ## Adding New Members
@@ -60,6 +63,7 @@ Edit `src/data/members.ts` and add a new member to the `MEMBERS` array:
   email: 'john.doe@colorado.edu',
   headshot: '/images/members/john-doe.jpg',  // 2:3 ratio image
   isLeadership: true,                // Set true for Mercury Council
+  roleNumber: '460',                 // Member's badge number (just the number)
 }
 ```
 
@@ -243,6 +247,7 @@ interface Member {
   email?: string;                 // Optional
   headshot?: string;              // Optional
   isLeadership?: boolean;         // Optional (default false)
+  roleNumber?: string;            // Optional: Member's badge number (just the number, e.g., "460")
 }
 ```
 

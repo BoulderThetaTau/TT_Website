@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './Components/layout/Navbar';
 import { ScrollToTop } from './Components/layout/ScrollToTop';
+import { Footer } from './Components/layout/Footer';
 import { Home } from './Pages/Home';
 import { About } from './Pages/About';
 
@@ -13,7 +14,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // Old page imports - will be replaced with TypeScript versions
 import Contact from './Components/pages/Contact';
 import SignUp from './Components/pages/SignUp';
-import Footer from './Components/Footer';
 import Brotherhood from './Components/pages/Brotherhood';
 import CommServ from './Components/pages/CommServe';
 import ProfDef from './Components/pages/ProfDef';

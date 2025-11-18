@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.0aa86787.css",
-    "main.js": "/static/js/main.5d00ea12.js",
+    "main.css": "/static/css/main.3d313201.css",
+    "main.js": "/static/js/main.773133cf.js",
     "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
-    "static/media/Rush_Head.JPG": "/static/media/Rush_Head.64be3964ac0ae0cf4c58.JPG",
+    "static/media/Avenir Next.ttc": "/static/media/Avenir Next.6ad613eab00ad37aae30.ttc",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
-    "static/media/jacqueminot.png": "/static/media/jacqueminot.129a8b9085b8c0b82053.png",
     "static/media/Contact_Head.png": "/static/media/Contact_Head.b73aa82fef5dc13052bf.png",
     "static/media/img-1.jpg": "/static/media/img-1.53f4843759ebec256cb9.jpg",
     "static/media/img-8.jpg": "/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
-    "static/media/CU_Campus.jpg": "/static/media/CU_Campus.7b314e5185284756a91d.jpg",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
-    "static/media/About_Head.jpg": "/static/media/About_Head.632e582f297de066e454.jpg",
-    "static/media/ThetaTauLogo.png": "/static/media/ThetaTauLogo.9d96a607cef7ba001b6a.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/VTFJustinaGEO-LightIt.otf": "/static/media/VTFJustinaGEO-LightIt.f2d9056efc2b05bee6ab.otf",
+    "static/media/VTFJustinaGEO-Light.otf": "/static/media/VTFJustinaGEO-Light.b6d067f64663ccc4d64b.otf",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/Pulsar-Original.otf": "/static/media/Pulsar-Original.c70071ed2b07d01bab71.otf",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -25,11 +24,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.0aa86787.css.map": "/static/css/main.0aa86787.css.map",
-    "main.5d00ea12.js.map": "/static/js/main.5d00ea12.js.map"
+    "main.3d313201.css.map": "/static/css/main.3d313201.css.map",
+    "main.773133cf.js.map": "/static/js/main.773133cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aa86787.css",
-    "static/js/main.5d00ea12.js"
+    "static/css/main.3d313201.css",
+    "static/js/main.773133cf.js"
   ]
 }

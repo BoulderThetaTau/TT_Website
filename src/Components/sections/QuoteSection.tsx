@@ -23,7 +23,7 @@ export const QuoteSection: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 sm:px-8 max-w-5xl mx-auto">
         <h2 className="font-primary text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 md:mb-8">
-          Our one intention:
+          Our open motto:
         </h2>
         <blockquote className="font-primary font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 md:mb-8">
           "Whatever thy hand findeth to do, do it with thy might"

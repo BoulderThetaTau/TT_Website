@@ -16,7 +16,6 @@ import './fonts.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Old page imports - will be replaced with TypeScript versions
-import Contact from './Components/pages/Contact';
 import Rush from './Components/pages/Rush';
 
 /**
@@ -35,7 +34,6 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/members" element={<Members />} />
         <Route path="/brotherhood" element={<Brotherhood />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/comm-serve" element={<CommunityService />} />
         <Route path="/prof-dev" element={<ProfessionalDevelopment />} />
         <Route path="/rush" element={<Rush />} />

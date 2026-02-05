@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e156f8e.css",
-    "main.js": "/static/js/main.b14450d9.js",
+    "main.css": "/static/css/main.e6c0e61f.css",
+    "main.js": "/static/js/main.f9530225.js",
     "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
     "static/media/Avenir Next.ttc": "/static/media/Avenir Next.6ad613eab00ad37aae30.ttc",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
-    "static/media/Contact_Head.png": "/static/media/Contact_Head.b73aa82fef5dc13052bf.png",
     "static/media/img-1.jpg": "/static/media/img-1.53f4843759ebec256cb9.jpg",
     "static/media/img-8.jpg": "/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -24,11 +23,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.4e156f8e.css.map": "/static/css/main.4e156f8e.css.map",
-    "main.b14450d9.js.map": "/static/js/main.b14450d9.js.map"
+    "main.e6c0e61f.css.map": "/static/css/main.e6c0e61f.css.map",
+    "main.f9530225.js.map": "/static/js/main.f9530225.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e156f8e.css",
-    "static/js/main.b14450d9.js"
+    "static/css/main.e6c0e61f.css",
+    "static/js/main.f9530225.js"
   ]
 }

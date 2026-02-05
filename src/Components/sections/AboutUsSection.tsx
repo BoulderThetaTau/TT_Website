@@ -17,11 +17,14 @@ export const AboutUsSection: React.FC = () => {
   const isMobile = useIsMobile();
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  // Sample photo data - replace with actual photos later
+  // Chapter photos from various events
   const photos = [
-    { id: 1, src: '/images/about-photo-1.jpg', alt: 'Theta Tau members at event' },
-    { id: 2, src: '/images/about-photo-2.jpg', alt: 'Theta Tau community service' },
-    { id: 3, src: '/images/about-photo-3.jpg', alt: 'Theta Tau brotherhood activities' },
+    { id: 1, src: '/images/Retreat_2025_1.JPG', alt: 'Theta Tau chapter retreat 2025' },
+    { id: 2, src: '/images/RushSpr2025.png', alt: 'Rush Spring 2025' },
+    { id: 3, src: '/images/Regionals_Spr_2023.png', alt: 'Regionals Spring 2023' },
+    { id: 4, src: '/images/EtaGamma_Contact.png', alt: 'Eta Gamma Chapter members' },
+    { id: 5, src: '/images/Retreat_2025_2.jpg', alt: 'Theta Tau retreat 2025' },
+    { id: 6, src: '/images/BH1.png', alt: 'Brotherhood event' },
   ];
 
   const photosToShow = isMobile ? 1 : 3;
@@ -134,12 +137,13 @@ export const AboutUsSection: React.FC = () => {
             {getVisiblePhotos().map((photo) => (
               <div
                 key={photo.id}
-                className="aspect-square bg-gray-300 rounded-lg overflow-hidden"
+                className="aspect-square bg-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                {/* Placeholder - will show actual image when available */}
-                <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  <span className="text-sm">Photo {photo.id}</span>
-                </div>
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>

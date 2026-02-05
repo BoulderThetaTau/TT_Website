@@ -70,12 +70,6 @@ export const NAV_ITEMS: NavRoute[] = [
     description: 'Join Theta Tau',
     showInNav: true,
   },
-  {
-    path: ROUTES.CONTACT,
-    label: 'Contact',
-    description: 'Get in touch with us',
-    showInNav: true,
-  },
 ];
 
 // Footer navigation (may differ from main nav)
@@ -84,7 +78,6 @@ export const FOOTER_NAV = {
     { path: ROUTES.ABOUT, label: 'About Us' },
     { path: ROUTES.RUSH, label: 'Rush' },
     { path: ROUTES.MEMBERS, label: 'Members' },
-    { path: ROUTES.CONTACT, label: 'Contact' },
   ],
   involvement: [
     { path: ROUTES.BROTHERHOOD, label: 'Brotherhood' },
@@ -118,14 +111,6 @@ export const HOME_CARDS = [
     path: ROUTES.MEMBERS,
     image: '/images/Merc.png', // Can update image later
     labelColor: 'gold',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-    description: 'Get in touch with us',
-    path: ROUTES.CONTACT,
-    image: '/images/Contact.png',
-    labelColor: 'red',
   },
 ];
 

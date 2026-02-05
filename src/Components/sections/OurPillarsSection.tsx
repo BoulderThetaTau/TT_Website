@@ -11,17 +11,17 @@ export const OurPillarsSection: React.FC = () => {
   const pillars = [
     {
       id: 'professional',
-      icon: '🎓',
+      icon: '/images/Icons/Professional_Development-Icon.png',
       ...COMPANY_INFO.pillars.professionalDevelopment
     },
     {
       id: 'brotherhood',
-      icon: '🤝',
+      icon: '/images/Icons/Brotherhood-Icon.png',
       ...COMPANY_INFO.pillars.brotherhood
     },
     {
       id: 'service',
-      icon: '❤️',
+      icon: '/images/Icons/Community-Service-Icon.png',
       ...COMPANY_INFO.pillars.communityService
     }
   ];
@@ -42,8 +42,12 @@ export const OurPillarsSection: React.FC = () => {
               className="flex flex-col items-center text-center text-white"
             >
               {/* Icon */}
-              <div className="text-6xl md:text-7xl lg:text-8xl mb-6">
-                {pillar.icon}
+              <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mb-6 flex items-center justify-center">
+                <img
+                  src={pillar.icon}
+                  alt={`${pillar.title} icon`}
+                  className="w-full h-full object-contain"
+                />
               </div>
 
               {/* Title */}

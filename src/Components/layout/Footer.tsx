@@ -12,7 +12,18 @@ export const Footer: React.FC = () => {
   const activeSocialMedia = getActiveSocialMedia();
 
   // Footer navigation sections
-  const footerSections = [
+  interface FooterLink {
+    label: string;
+    path: string;
+    external?: boolean;
+  }
+
+  interface FooterSection {
+    title: string;
+    links: FooterLink[];
+  }
+
+  const footerSections: FooterSection[] = [
     {
       title: 'About',
       links: [

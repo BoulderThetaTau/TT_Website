@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c0e61f.css",
-    "main.js": "/static/js/main.f9530225.js",
+    "main.css": "/static/css/main.ddc077fa.css",
+    "main.js": "/static/js/main.0187ddd4.js",
     "static/media/Rush_Over.jpg": "/static/media/Rush_Over.97ca7b0f8c932b68e937.jpg",
     "static/media/Avenir Next.ttc": "/static/media/Avenir Next.6ad613eab00ad37aae30.ttc",
     "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
@@ -18,16 +18,12 @@
     "static/media/Pulsar-Original.otf": "/static/media/Pulsar-Original.c70071ed2b07d01bab71.otf",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.e6c0e61f.css.map": "/static/css/main.e6c0e61f.css.map",
-    "main.f9530225.js.map": "/static/js/main.f9530225.js.map"
+    "main.ddc077fa.css.map": "/static/css/main.ddc077fa.css.map",
+    "main.0187ddd4.js.map": "/static/js/main.0187ddd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c0e61f.css",
-    "static/js/main.f9530225.js"
+    "static/css/main.ddc077fa.css",
+    "static/js/main.0187ddd4.js"
   ]
 }

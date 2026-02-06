@@ -12,11 +12,12 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"],
-      "@/Components/*": ["Components/*"],
-      "@/Pages/*": ["Pages/*"],
+      "@/app/*": ["app/*"],
+      "@/pages/*": ["pages/*"],
+      "@/components/*": ["components/*"],
       "@/hooks/*": ["hooks/*"],
       "@/utils/*": ["utils/*"],
-      "@/constants/*": ["constants/*"],
+      "@/config/*": ["config/*"],
       "@/types/*": ["types/*"],
       "@/data/*": ["data/*"],
       "@/assets/*": ["assets/*"]
@@ -68,6 +69,7 @@
     "build",
     "dist",
     "src/Archive",
+    "src/archive",
     "**/*.spec.ts",
     "**/*.test.ts"
   ]

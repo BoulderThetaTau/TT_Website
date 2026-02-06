@@ -19,9 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "emulators:start": "firebase emulators:start"
   },
@@ -44,12 +44,14 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@types/node": "^24.9.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.4.20",
+    "craco-alias": "^3.0.1",
     "firebase-tools": "^14.0.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",

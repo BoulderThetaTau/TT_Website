@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY_INFO } from '../../constants/company';
-import { getActiveSocialMedia } from '../../constants/socialMedia';
+import { CHAPTER_INFO, getActiveSocialMedia } from '@/config/chapter';
 
 /**
  * Footer Component
@@ -63,15 +62,15 @@ export const Footer: React.FC = () => {
                 THETA TAU
               </h3>
               <p className="font-primary text-white text-lg leading-tight">
-                {COMPANY_INFO.chapter.name}
+                {CHAPTER_INFO.chapter.name}
               </p>
               <p className="font-primary text-white text-sm opacity-75 mt-2 leading-relaxed">
-                {COMPANY_INFO.chapter.university}
+                {CHAPTER_INFO.chapter.university}
               </p>
             </div>
 
             <p className="text-white text-sm leading-relaxed opacity-90">
-              {COMPANY_INFO.description.short}
+              {CHAPTER_INFO.description.short}
             </p>
 
             {/* Social Media Icons */}
@@ -131,20 +130,20 @@ export const Footer: React.FC = () => {
             {/* Copyright */}
             <div className="text-white text-sm text-center md:text-left leading-relaxed">
               <p className="opacity-90">
-                © {new Date().getFullYear()} {COMPANY_INFO.chapter.fullName}. All rights reserved.
+                © {new Date().getFullYear()} {CHAPTER_INFO.chapter.fullName}. All rights reserved.
               </p>
               <p className="opacity-75 text-xs mt-2">
-                Founded {COMPANY_INFO.chapter.localFounded} • National Founding {COMPANY_INFO.chapter.founded}
+                Founded {CHAPTER_INFO.chapter.localFounded} • National Founding {CHAPTER_INFO.chapter.founded}
               </p>
             </div>
 
             {/* Contact Email */}
             <a
-              href={`mailto:${COMPANY_INFO.contact.email.regent}`}
+              href={`mailto:${CHAPTER_INFO.contact.email.regent}`}
               className="text-white text-sm hover:text-thetaTauGold transition-colors duration-200 flex items-center gap-2 leading-relaxed"
             >
               <i className="fas fa-envelope" />
-              {COMPANY_INFO.contact.email.regent}
+              {CHAPTER_INFO.contact.email.regent}
             </a>
           </div>
         </div>

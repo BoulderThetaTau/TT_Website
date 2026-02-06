@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useToggle } from '../../hooks/useToggle';
-import { NAV_ITEMS } from '../../constants/navigation';
+import { useToggle } from '@/hooks/useToggle';
+import { NAV_ITEMS } from '@/config/navigation';
 
 /**
  * Navbar Component
